@@ -8,7 +8,9 @@ const menuButton = document.querySelector('[data-menu-open]');
 if (typeof menu.showModal === 'function') {
   menuButton.hidden = false;
   menuButton.addEventListener('click', () => {
+    for (const group of menu.querySelectorAll('details[open]')) group.open = false;
     menu.showModal();
+    menu.scrollTop = 0;
     menuButton.setAttribute('aria-expanded','true');
   });
   menu.addEventListener('close', () => menuButton.setAttribute('aria-expanded','false'));

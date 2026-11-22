@@ -24,9 +24,14 @@
   <dialog id="lab-menu" aria-label="Menu">
     <div class="lab-menu-inner">
       <button type="button" data-menu-close>Close ×</button>
-      <p class="lab-menu-tag">On this page</p><nav aria-label="Page sections"><a class="lab-nav-link" href="#problem"><span aria-hidden="true">01</span>Problem</a><a class="lab-nav-link" href="#approach"><span aria-hidden="true">02</span>Approach</a><a class="lab-nav-link" href="#capture"><span aria-hidden="true">03</span>Capture</a><a class="lab-nav-link" href="#analysis"><span aria-hidden="true">04</span>Analysis</a><a class="lab-nav-link" href="#results"><span aria-hidden="true">05</span>Results</a><a class="lab-nav-link" href="#files"><span aria-hidden="true">06</span>Files</a></nav>
-      <p class="lab-menu-tag">Site</p><nav aria-label="Site"><a class="lab-nav-link is-site" href="index.html#work">Work</a><a class="lab-nav-link is-site" href="method.html">Method</a><a class="lab-nav-link is-site" href="index.html#about">About</a><a class="lab-nav-link is-site" href="index.html#contact">Contact</a></nav>
-      <p class="lab-menu-tag">Projects</p><nav aria-label="Projects"><a class="lab-nav-link is-site" href="beta.html">Beta Platform</a><a class="lab-nav-link is-site" aria-current="page" href="flowy.html">Flowy</a><a class="lab-nav-link is-site" href="sel.html">SEL</a><a class="lab-nav-link is-site" href="necrothing.html">Necrothing</a></nav>
+      <details class="lab-menu-group">
+        <summary>On this page</summary>
+        <nav class="lab-menu-items" aria-label="Page sections"><a class="lab-nav-link" href="#problem"><span aria-hidden="true">01</span>Problem</a><a class="lab-nav-link" href="#approach"><span aria-hidden="true">02</span>Approach</a><a class="lab-nav-link" href="#capture"><span aria-hidden="true">03</span>Capture</a><a class="lab-nav-link" href="#analysis"><span aria-hidden="true">04</span>Analysis</a><a class="lab-nav-link" href="#results"><span aria-hidden="true">05</span>Results</a><a class="lab-nav-link" href="#files"><span aria-hidden="true">06</span>Files</a></nav>
+      </details>
+      <nav class="lab-menu-nav" aria-label="Site"><details class="lab-menu-group">
+        <summary>Work</summary>
+        <div class="lab-menu-items"><a class="lab-nav-link is-site" href="index.html#work">All work</a><a class="lab-nav-link is-site" href="beta.html">Beta Platform</a><a class="lab-nav-link is-site" aria-current="page" href="flowy.html">Flowy</a><a class="lab-nav-link is-site" href="sel.html">SEL</a><a class="lab-nav-link is-site" href="necrothing.html">Necrothing</a></div>
+      </details><a class="lab-nav-link is-site" href="method.html">Method</a><a class="lab-nav-link is-site" href="index.html#about">About</a><a class="lab-nav-link is-site" href="index.html#contact">Contact</a></nav>
     </div>
   </dialog>
   <a class="lab-top" href="#main" data-top aria-label="Back to top"><span aria-hidden="true">↑</span></a>

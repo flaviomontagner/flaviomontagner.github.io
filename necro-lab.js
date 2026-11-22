@@ -1,6 +1,5 @@
 (() => {
 const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
-const small = matchMedia('(max-width:740px)').matches;
 const watch = (el, cb, margin = '0px') => new IntersectionObserver(([e]) => cb(e.isIntersecting), { rootMargin: margin }).observe(el);
 const once = (el, cb) => {
   if (!el) return;
@@ -29,11 +28,11 @@ if (stage && T && MODELS && T.GLTFLoader) {
     camera.position.set(10.5, 6.6, 11.5);
     const target = new T.Vector3(0, .9, 0);
     const controls = new T.OrbitControls(camera, canvas);
+    canvas.style.touchAction = 'pan-y';
     controls.target.copy(target);
     controls.enableZoom = false; controls.enablePan = false; controls.enableDamping = true;
     controls.minPolarAngle = .75; controls.maxPolarAngle = 1.32;
     controls.autoRotate = !reduced; controls.autoRotateSpeed = .35;
-    if (small) controls.enableRotate = false;
 
     const hemi = new T.HemisphereLight(0xffffff, 0x202020, 1);
     const sun = new T.DirectionalLight(0xffffff, 1);
@@ -217,9 +216,11 @@ if (stage && T && MODELS && T.GLTFLoader) {
     setPhase('dusk');
 
     // On wide screens the yard sits in the right half, clear of the title.
-    const resize = () => { const r = stage.getBoundingClientRect(); renderer.setSize(r.width, r.height, false); camera.aspect = r.width / r.height;
-      if (r.width > 1020) camera.setViewOffset(r.width, r.height, -r.width * .22, r.height * .06, r.width, r.height); else camera.clearViewOffset();
-      camera.updateProjectionMatrix(); };
+    const resize = () => {
+      const { width, height } = stage.getBoundingClientRect();
+      renderer.setSize(width, height, false);
+      camera.setViewOffset(width, height, width > 1020 ? -width * .22 : 0, height * .06, width, height);
+    };
     resize(); addEventListener('resize', resize);
 
     // walk cycles from the game's rigs (characters.ts animateRig): the zombie limps, the dog trots

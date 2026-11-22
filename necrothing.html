@@ -24,22 +24,27 @@
   <dialog id="lab-menu" aria-label="Menu">
     <div class="lab-menu-inner">
       <button type="button" data-menu-close>Close ×</button>
-      <p class="lab-menu-tag">On this page</p><nav aria-label="Page sections"><a class="lab-nav-link" href="#loop"><span aria-hidden="true">01</span>Loop</a><a class="lab-nav-link" href="#first"><span aria-hidden="true">02</span>First session</a><a class="lab-nav-link" href="#balance"><span aria-hidden="true">03</span>Balance</a><a class="lab-nav-link" href="#world"><span aria-hidden="true">04</span>World</a><a class="lab-nav-link" href="#evolution"><span aria-hidden="true">05</span>Evolution</a><a class="lab-nav-link" href="#assets"><span aria-hidden="true">06</span>Assets</a><a class="lab-nav-link" href="#performance"><span aria-hidden="true">07</span>Performance</a><a class="lab-nav-link" href="#method"><span aria-hidden="true">08</span>Method</a><a class="lab-nav-link" href="#status"><span aria-hidden="true">09</span>Status</a><a class="lab-nav-link" href="#files"><span aria-hidden="true">10</span>Files</a></nav>
-      <p class="lab-menu-tag">Site</p><nav aria-label="Site"><a class="lab-nav-link is-site" href="index.html#work">Work</a><a class="lab-nav-link is-site" href="method.html">Method</a><a class="lab-nav-link is-site" href="index.html#about">About</a><a class="lab-nav-link is-site" href="index.html#contact">Contact</a></nav>
-      <p class="lab-menu-tag">Projects</p><nav aria-label="Projects"><a class="lab-nav-link is-site" href="beta.html">Beta Platform</a><a class="lab-nav-link is-site" href="flowy.html">Flowy</a><a class="lab-nav-link is-site" href="sel.html">SEL</a><a class="lab-nav-link is-site" aria-current="page" href="necrothing.html">Necrothing</a></nav>
+      <details class="lab-menu-group">
+        <summary>On this page</summary>
+        <nav class="lab-menu-items" aria-label="Page sections"><a class="lab-nav-link" href="#loop"><span aria-hidden="true">01</span>Loop</a><a class="lab-nav-link" href="#first"><span aria-hidden="true">02</span>First session</a><a class="lab-nav-link" href="#balance"><span aria-hidden="true">03</span>Balance</a><a class="lab-nav-link" href="#world"><span aria-hidden="true">04</span>World</a><a class="lab-nav-link" href="#evolution"><span aria-hidden="true">05</span>Evolution</a><a class="lab-nav-link" href="#assets"><span aria-hidden="true">06</span>Assets</a><a class="lab-nav-link" href="#performance"><span aria-hidden="true">07</span>Performance</a><a class="lab-nav-link" href="#method"><span aria-hidden="true">08</span>Method</a><a class="lab-nav-link" href="#status"><span aria-hidden="true">09</span>Status</a><a class="lab-nav-link" href="#files"><span aria-hidden="true">10</span>Files</a></nav>
+      </details>
+      <nav class="lab-menu-nav" aria-label="Site"><details class="lab-menu-group">
+        <summary>Work</summary>
+        <div class="lab-menu-items"><a class="lab-nav-link is-site" href="index.html#work">All work</a><a class="lab-nav-link is-site" href="beta.html">Beta Platform</a><a class="lab-nav-link is-site" href="flowy.html">Flowy</a><a class="lab-nav-link is-site" href="sel.html">SEL</a><a class="lab-nav-link is-site" aria-current="page" href="necrothing.html">Necrothing</a></div>
+      </details><a class="lab-nav-link is-site" href="method.html">Method</a><a class="lab-nav-link is-site" href="index.html#about">About</a><a class="lab-nav-link is-site" href="index.html#contact">Contact</a></nav>
     </div>
   </dialog>
   <a class="lab-top" href="#main" data-top aria-label="Back to top"><span aria-hidden="true">↑</span></a>
   <main id="main"><section id="overview" class="hero nc-hero" data-enter>
-    <div class="nc-stage" data-diorama>
-      <canvas class="nc-canvas" data-diorama-canvas aria-hidden="true"></canvas>
-      <div class="nc-fallback" aria-hidden="true"><img src="assets/necrothing-world.webp" alt=""></div>
-    </div>
     <div class="wrap lab-shell nc-hero-grid">
       <div class="nc-hero-copy">
         <h1>A cemetery for <em>forgotten things.</em></h1>
         <p class="nc-lede">Bury a phone that died, a houseplant you couldn’t save, the gym you were starting on Monday. Then tend the graves, meet who wanders by at night, and build the cemetery around them. A low-poly 3D world built on psychological research into how we let go of things, and why small rituals help.</p>
         <p class="nc-role"><strong>My role</strong> Independent designer and developer: concept, game and UX design, and the build, with AI agents working under my review.</p>
+      </div>
+      <div class="nc-stage" data-diorama data-enter-media>
+        <canvas class="nc-canvas" data-diorama-canvas aria-hidden="true"></canvas>
+        <div class="nc-fallback" aria-hidden="true"><img src="assets/necrothing-world.webp" alt=""></div>
       </div>
       <div class="nc-bury">
         <form class="nc-bury-form" data-bury>

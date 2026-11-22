@@ -22,7 +22,7 @@
 .nc-note {margin:16px 0 0;font:500 12px var(--mono);color:var(--muted)}
 .nc-tag {margin:0 0 14px;font:600 12px var(--mono);color:var(--amber)}
 
-/* Hero: a live diorama behind the copy */
+/* The diorama fills the desktop hero and has its own row in the stacked layout. */
 .nc-hero {position:relative;min-height:calc(100svh - 62px);display:grid;align-items:end;overflow:hidden;padding:clamp(28px,5vh,56px) 0}
 .nc-stage {position:absolute;inset:0;background:radial-gradient(ellipse at 60% 40%,#1c2a28 0,#0d1210 70%)}
 .nc-canvas {position:absolute;inset:0;width:100%;height:100%;cursor:grab;touch-action:pan-y}
@@ -33,8 +33,9 @@
 .nc-hero::after {content:'';position:absolute;inset:auto 0 0 0;height:55%;background:linear-gradient(transparent,#0d1210e6 70%);pointer-events:none}
 .nc-hero::before {content:'';position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,#0d1210e0 0,#0d1210a8 34%,#0d121000 60%);pointer-events:none}
 .nc-kicker {text-shadow:0 1px 12px #0d1210}
-.nc-hero-grid {position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(300px,.7fr);gap:clamp(24px,4vw,64px);align-items:end;pointer-events:none}
+.nc-hero-grid {display:grid;grid-template-columns:minmax(0,1.15fr) minmax(300px,.7fr);gap:clamp(24px,4vw,64px);align-items:end;pointer-events:none}
 .nc-hero-grid > * {pointer-events:auto}
+.nc-hero-copy,.nc-bury {position:relative;z-index:3}
 .nc-kicker {margin:0 0 18px;font:500 12px/1.5 var(--mono);color:var(--muted)}
 .nc-hero h1 {margin:0 0 20px;font:650 clamp(48px,6.2vw,100px)/.92 var(--display);letter-spacing:-.058em;text-wrap:balance;text-shadow:0 4px 30px #0d1210}
 .nc-hero h1 em {font-style:normal;color:var(--accent)}
@@ -222,9 +223,13 @@
 
 @media(max-width:1020px) {
   .nc-hero-grid,.nc-world-grid,.nc-kiosk {grid-template-columns:minmax(0,1fr)}
+  .nc-hero {min-height:auto}
+  .nc-hero::before,.nc-hero::after {display:none}
+  .nc-stage {position:relative;inset:auto;width:100%;aspect-ratio:5/3;max-height:440px;border-radius:14px;overflow:hidden;isolation:isolate}
+  .nc-fallback img {opacity:1}
+  .nc-phase button {min-height:44px}
   .nc-pipe {grid-template-columns:repeat(2,minmax(0,1fr))}
   .nc-pipe li::after {display:none}
-  .nc-hero::before {display:none}
   .nc-ring {grid-template-columns:repeat(2,minmax(0,1fr))}
   .nc-ring > li::after {display:none}
   .nc-steps {grid-template-columns:repeat(5,minmax(0,1fr))}
@@ -232,9 +237,6 @@
   .nc-proof {grid-template-columns:repeat(2,minmax(0,1fr))}
 }
 @media(max-width:740px) {
-  .nc-hero {align-items:end;min-height:auto;padding-top:46svh}
-  .nc-stage {height:58svh;bottom:auto}
-  .nc-hero::after {top:38svh;bottom:auto;height:21svh;background:linear-gradient(transparent,#0d1210 95%)}
   .nc-ring,.nc-exploits,.nc-profiles,.nc-budgets,.nc-roadmap,.nc-proof,.nc-pipe,.nc-tool-shots {grid-template-columns:minmax(0,1fr)}
   .nc-steps {grid-template-columns:repeat(2,minmax(0,1fr))}
   .nc-saves {grid-template-columns:minmax(0,1fr)}
