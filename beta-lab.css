@@ -73,6 +73,12 @@ html {scroll-padding-top:0}
 .lab-menu-inner .lab-menu-items .lab-nav-link[aria-current] {color:var(--dark-accent)}
 .lab-menu-inner .lab-nav-link span {display:none}
 .lab-menu-inner .lab-nav-link::after {display:none}
+.lab-menu-context {margin-bottom:14px;border-radius:12px;background:color-mix(in srgb,var(--dark-ink) 7%,var(--dark))}
+.lab-menu-context > summary {padding-inline:14px;border:0;border-radius:inherit;font-size:16px;letter-spacing:0}
+.lab-menu-context > summary::after {color:var(--dark-muted)}
+.lab-menu-context .lab-menu-items {margin:0 14px;border-top:1px solid #ffffff1c}
+.lab-menu-inner .lab-menu-context .lab-nav-link {font-size:16px}
+.lab-menu-context .lab-nav-link:last-child {border-bottom:0}
 .lab-top {position:fixed;z-index:30;right:24px;bottom:24px;display:grid;place-items:center;width:52px;height:52px;border-radius:50%;background:var(--ink);color:var(--paper);font-size:20px;box-shadow:0 12px 30px -14px #0008;opacity:0;transform:translateY(12px) scale(.9);pointer-events:none;transition:opacity .25s,transform .25s}
 .lab-top.is-on {opacity:1;transform:none;pointer-events:auto}
 .lab-top:hover {background:var(--accent)}
