@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en" data-type="software" data-motion>
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Flowy · Flavio Montagner</title>
+  <meta name="description" content="Flowy records a mobile session in the background and turns it into a replay, a tap map and a plain-language account of the journey. Concept, UX, iOS SDK and analysis platform."><meta name="theme-color" content="#f4f1ea">
+  <meta name="page-type" content="software"><meta name="site-kind" content="software"><meta name="robots" content="noindex">
+  <meta property="og:title" content="Flowy · Flavio Montagner"><meta property="og:description" content="Flowy records a mobile session in the background and turns it into a replay, a tap map and a plain-language account of the journey. Concept, UX, iOS SDK and analysis platform."><meta property="og:image" content="assets/flowy-lab-overview.webp">
+  <link rel="icon" href="assets/mark.png"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="assets/motion/motion.css"><link rel="stylesheet" href="beta-lab.css"><link rel="stylesheet" href="flowy-lab.css">
+  <script>document.documentElement.classList.add('m-enter');setTimeout(()=>document.documentElement.classList.add('m-enter-done'),700)</script>
+  <script src="beta-lab.js" defer></script><script src="flowy-lab.js" defer></script><script src="interactions.js" defer></script>
+</head>
+<body class="beta-lab flowy-lab">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="nav lab-mast">
+    <div class="lab-nav-bar">
+      <a class="lab-mark" href="index.html" aria-label="Flavio Montagner, home"><img src="assets/fm-head.webp" alt="" width="40" height="40"></a>
+      <nav class="lab-nav" aria-label="Site"><div class="lab-drop"><a class="lab-nav-link is-site" href="index.html#work" aria-current="true" aria-haspopup="true">Work<i aria-hidden="true"></i></a><div class="lab-drop-panel" role="group" aria-label="Projects"><a href="beta.html">Beta Platform</a><a aria-current="page" href="flowy.html">Flowy</a><a href="sel.html">SEL</a><a href="necrothing.html">Necrothing</a></div></div><a class="lab-nav-link is-site" href="method.html">Method</a><a class="lab-nav-link is-site" href="index.html#about">About</a><a class="lab-nav-link is-site" href="index.html#contact">Contact</a></nav>
+      <button class="lab-menu-toggle" type="button" data-menu-open aria-haspopup="dialog" aria-controls="lab-menu" aria-expanded="false" hidden>Menu</button>
+    </div>
+  </header>
+  <nav class="lab-rail" aria-label="Page sections"><a class="lab-nav-link" href="#problem"><span aria-hidden="true">01</span>Problem</a><a class="lab-nav-link" href="#approach"><span aria-hidden="true">02</span>Approach</a><a class="lab-nav-link" href="#capture"><span aria-hidden="true">03</span>Capture</a><a class="lab-nav-link" href="#analysis"><span aria-hidden="true">04</span>Analysis</a><a class="lab-nav-link" href="#results"><span aria-hidden="true">05</span>Results</a><a class="lab-nav-link" href="#files"><span aria-hidden="true">06</span>Files</a></nav>
+  <div class="lab-progress" aria-hidden="true"></div>
+  <dialog id="lab-menu" aria-label="Menu">
+    <div class="lab-menu-inner">
+      <button type="button" data-menu-close>Close ×</button>
+      <p class="lab-menu-tag">On this page</p><nav aria-label="Page sections"><a class="lab-nav-link" href="#problem"><span aria-hidden="true">01</span>Problem</a><a class="lab-nav-link" href="#approach"><span aria-hidden="true">02</span>Approach</a><a class="lab-nav-link" href="#capture"><span aria-hidden="true">03</span>Capture</a><a class="lab-nav-link" href="#analysis"><span aria-hidden="true">04</span>Analysis</a><a class="lab-nav-link" href="#results"><span aria-hidden="true">05</span>Results</a><a class="lab-nav-link" href="#files"><span aria-hidden="true">06</span>Files</a></nav>
+      <p class="lab-menu-tag">Site</p><nav aria-label="Site"><a class="lab-nav-link is-site" href="index.html#work">Work</a><a class="lab-nav-link is-site" href="method.html">Method</a><a class="lab-nav-link is-site" href="index.html#about">About</a><a class="lab-nav-link is-site" href="index.html#contact">Contact</a></nav>
+      <p class="lab-menu-tag">Projects</p><nav aria-label="Projects"><a class="lab-nav-link is-site" href="beta.html">Beta Platform</a><a class="lab-nav-link is-site" aria-current="page" href="flowy.html">Flowy</a><a class="lab-nav-link is-site" href="sel.html">SEL</a><a class="lab-nav-link is-site" href="necrothing.html">Necrothing</a></nav>
+    </div>
+  </dialog>
+  <a class="lab-top" href="#main" data-top aria-label="Back to top"><span aria-hidden="true">↑</span></a>
+  <main id="main">
+    <section id="overview" class="hero fl-hero" data-enter>
+    <div class="wrap lab-shell fl-hero-grid">
+      <div class="fl-hero-copy">
+        <h1>The session reports <em>itself.</em></h1>
+        <p class="fl-lede">Testers used to shake the phone, write what went wrong and hope one screenshot was enough. Flowy records the whole journey in the background and turns it into a replay, a tap map and a plain-language account of what happened. Nobody has to report anything.</p>
+        <p class="fl-role"><strong>My role</strong> Idea, UX, iOS SDK and analysis platform, end to end.</p>
+      </div>
+      <div class="fl-capture" data-capture>
+        <div class="fl-phone" aria-hidden="true">
+    <div class="fl-phone-screen">
+      <div class="fl-app is-vehicle"><p class="fl-app-back">Garage</p><p class="fl-app-title">Vehicle</p><p class="fl-app-big">68<small>%</small></p><p class="fl-app-row is-target">Charging plan <span>›</span></p><p class="fl-app-row">Climate <span>›</span></p><p class="fl-app-row">Settings <span>›</span></p></div>
+      <div class="fl-app is-plan"><p class="fl-app-back">‹ Vehicle</p><p class="fl-app-title">Charging plan</p><p class="fl-app-label">Your vehicle</p><p class="fl-app-big">68<small>%</small></p><p class="fl-app-row">Departure <span>07:30</span></p><p class="fl-app-row">Preferences <span>›</span></p></div>
+      <div class="fl-app is-settings"><p class="fl-app-back">‹ Vehicle</p><p class="fl-app-title">Settings</p><p class="fl-app-row">Account <span>›</span></p><p class="fl-app-field"><span>Password</span><i></i></p><p class="fl-app-row">Notifications <span>›</span></p></div>
+      <span class="fl-tap"></span>
+      <span class="fl-shutter"></span>
+    </div>
+  </div>
+        <div class="fl-log">
+          <p class="fl-log-head"><span class="fl-rec"></span>Recording · illustrative session</p>
+          <ol><li class="is-screen"><time>00:00.0</time><b>SCREEN</b><span>Vehicle</span></li><li class="is-tap"><time>00:02.4</time><b>TAP</b><span>“Charging plan”</span></li><li class="is-frame"><time>00:02.5</time><b>FRAME</b><span>014 · OCR 11 words</span></li><li class="is-screen"><time>00:03.1</time><b>SCREEN</b><span>Charging plan</span></li><li class="is-tap"><time>00:07.9</time><b>TAP</b><span>Back</span></li><li class="is-screen"><time>00:08.6</time><b>SCREEN</b><span>Settings</span></li><li class="is-frame"><time>00:09.0</time><b>FRAME</b><span>duplicate · skipped</span></li><li class="is-frame"><time>00:12.2</time><b>FRAME</b><span>password field · blurred</span></li><li class="is-screen"><time>00:15.7</time><b>SCREEN</b><span>Charging plan</span></li><li class="is-flag"><time>00:16.0</time><b>FLAG</b><span>return to an earlier screen</span></li></ol>
+          <div class="fl-strip" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <section id="problem" class="fl-problem"><div class="wrap lab-shell">
+    <div class="fl-problem-head">
+      <h2>Shake. Describe. Hope.</h2>
+      <p>The team paid for an external tool: a tester shook the device, wrote a description and sent it. It captured technical logs and a single screenshot. Everything else depended on an unpaid tester deciding to report, and describing the defect well enough for someone else to rebuild it.</p>
+    </div>
+    <figure class="fl-film" data-film>
+      <p class="fl-film-key">One session, frame by frame. <span>What the old report sent.</span></p>
+      <div class="fl-film-frames" role="img" aria-label="A session drawn as 120 frames; only one frame was sent in the old report."><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="is-sent"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    </figure>
+    <ol class="fl-gaps">
+      <li><b>Only technical logs.</b> They tell you what the app did, not what the person was trying to do.</li>
+      <li><b>One screenshot.</b> Rarely the one that explains the defect or leads to its root cause.</li>
+      <li><b>The tester does the work.</b> Unpaid, they decide whether to report and how well. Most report the first issue of the day, then fewer and fewer.</li>
+      <li><b>CX insight by guesswork.</b> Anything about the experience had to be interpreted from the description.</li>
+    </ol>
+  </div></section>
+    <section id="approach" class="fl-approach"><div class="wrap lab-shell">
+    <h2>Invisible to the tester. Built in two halves.</h2>
+    <p class="fl-approach-lede">The brief was a log that tells the user’s journey, not just the app’s: sent automatically at the end of every session and light enough not to notice. Each one comes with a replay of the session (three to four minutes on average), a map of the taps and an automatic analysis.</p>
+    <div class="fl-pipe" data-pipe>
+      <article class="fl-pipe-node">
+        <h3>The SDK</h3>
+        <p>Reads each screen’s view hierarchy and accessibility tags, captures frames and runs OCR on them, and blurs anything sensitive before it leaves the device.</p>
+      </article>
+      <div class="fl-pipe-wire" aria-hidden="true"><span>session file<br>at session end</span><i></i><i></i><i></i></div>
+      <article class="fl-pipe-node is-platform">
+        <h3>The analysis</h3>
+        <p>A multimodal model running locally, for security and privacy, rebuilds the journey: flows, rage taps, blocks, errors, and where the person succeeded or gave up.</p>
+      </article>
+    </div>
+  </div></section>
+    <section id="capture" class="fl-capture-rules"><div class="wrap lab-shell">
+    <div class="fl-split">
+      <h2>What the SDK keeps, and what it throws away.</h2>
+      <p>The SDK has to see enough to rebuild a journey without becoming heavy to send or invasive to use. Three triggers decide when a frame is taken; two rules decide what survives.</p>
+    </div>
+    <figure class="fl-timeline" data-timeline>
+      <svg viewBox="0 0 1000 150" role="img" aria-label="Capture timeline over four minutes: one frame a second for the first 120 seconds, then one every 30 seconds while the app is idle. Taps and screen changes trigger extra frames; duplicates are dropped.">
+        <line class="fl-axis" x1="40" x2="980" y1="92" y2="92"/>
+        <line class="fl-t-frame" x1="40" x2="40" y1="66" y2="92"/><line class="fl-t-frame" x1="43.916666666666664" x2="43.916666666666664" y1="66" y2="92"/><line class="fl-t-frame" x1="47.833333333333336" x2="47.833333333333336" y1="66" y2="92"/><line class="fl-t-frame" x1="51.75" x2="51.75" y1="66" y2="92"/><line class="fl-t-frame" x1="55.666666666666664" x2="55.666666666666664" y1="66" y2="92"/><line class="fl-t-frame" x1="59.58333333333333" x2="59.58333333333333" y1="66" y2="92"/><line class="fl-t-frame" x1="63.5" x2="63.5" y1="66" y2="92"/><line class="fl-t-frame" x1="67.41666666666667" x2="67.41666666666667" y1="66" y2="92"/><line class="fl-t-frame" x1="71.33333333333333" x2="71.33333333333333" y1="66" y2="92"/><line class="fl-t-frame" x1="75.25" x2="75.25" y1="66" y2="92"/><line class="fl-t-frame" x1="79.16666666666666" x2="79.16666666666666" y1="66" y2="92"/><line class="fl-t-frame" x1="83.08333333333333" x2="83.08333333333333" y1="66" y2="92"/><line class="fl-t-frame" x1="87" x2="87" y1="66" y2="92"/><line class="fl-t-frame" x1="90.91666666666667" x2="90.91666666666667" y1="66" y2="92"/><line class="fl-t-frame" x1="106.58333333333333" x2="106.58333333333333" y1="66" y2="92"/><line class="fl-t-frame" x1="110.5" x2="110.5" y1="66" y2="92"/><line class="fl-t-frame" x1="114.41666666666666" x2="114.41666666666666" y1="66" y2="92"/><line class="fl-t-frame" x1="118.33333333333333" x2="118.33333333333333" y1="66" y2="92"/><line class="fl-t-frame" x1="122.25" x2="122.25" y1="66" y2="92"/><line class="fl-t-frame" x1="126.16666666666666" x2="126.16666666666666" y1="66" y2="92"/><line class="fl-t-frame" x1="130.08333333333334" x2="130.08333333333334" y1="66" y2="92"/><line class="fl-t-frame" x1="134" x2="134" y1="66" y2="92"/><line class="fl-t-frame" x1="137.91666666666669" x2="137.91666666666669" y1="66" y2="92"/><line class="fl-t-frame" x1="141.83333333333334" x2="141.83333333333334" y1="66" y2="92"/><line class="fl-t-frame" x1="145.75" x2="145.75" y1="66" y2="92"/><line class="fl-t-frame" x1="149.66666666666669" x2="149.66666666666669" y1="66" y2="92"/><line class="fl-t-frame" x1="153.58333333333331" x2="153.58333333333331" y1="66" y2="92"/><line class="fl-t-frame" x1="157.5" x2="157.5" y1="66" y2="92"/><line class="fl-t-frame" x1="161.41666666666669" x2="161.41666666666669" y1="66" y2="92"/><line class="fl-t-frame" x1="165.33333333333331" x2="165.33333333333331" y1="66" y2="92"/><line class="fl-t-frame" x1="169.25" x2="169.25" y1="66" y2="92"/><line class="fl-t-frame" x1="173.16666666666666" x2="173.16666666666666" y1="66" y2="92"/><line class="fl-t-frame" x1="177.08333333333334" x2="177.08333333333334" y1="66" y2="92"/><line class="fl-t-frame" x1="181" x2="181" y1="66" y2="92"/><line class="fl-t-frame" x1="184.91666666666669" x2="184.91666666666669" y1="66" y2="92"/><line class="fl-t-frame" x1="188.83333333333331" x2="188.83333333333331" y1="66" y2="92"/><line class="fl-t-frame" x1="192.75" x2="192.75" y1="66" y2="92"/><line class="fl-t-frame" x1="196.66666666666666" x2="196.66666666666666" y1="66" y2="92"/><line class="fl-t-frame" x1="200.58333333333334" x2="200.58333333333334" y1="66" y2="92"/><line class="fl-t-frame" x1="204.5" x2="204.5" y1="66" y2="92"/><line class="fl-t-frame" x1="208.41666666666666" x2="208.41666666666666" y1="66" y2="92"/><line class="fl-t-frame" x1="212.33333333333331" x2="212.33333333333331" y1="66" y2="92"/><line class="fl-t-frame" x1="216.25" x2="216.25" y1="66" y2="92"/><line class="fl-t-frame" x1="220.16666666666669" x2="220.16666666666669" y1="66" y2="92"/><line class="fl-t-frame" x1="224.08333333333334" x2="224.08333333333334" y1="66" y2="92"/><line class="fl-t-frame" x1="228" x2="228" y1="66" y2="92"/><line class="fl-t-frame" x1="231.91666666666666" x2="231.91666666666666" y1="66" y2="92"/><line class="fl-t-frame" x1="235.83333333333334" x2="235.83333333333334" y1="66" y2="92"/><line class="fl-t-frame" x1="247.58333333333331" x2="247.58333333333331" y1="66" y2="92"/><line class="fl-t-frame" x1="251.5" x2="251.5" y1="66" y2="92"/><line class="fl-t-frame" x1="255.41666666666666" x2="255.41666666666666" y1="66" y2="92"/><line class="fl-t-frame" x1="259.33333333333337" x2="259.33333333333337" y1="66" y2="92"/><line class="fl-t-frame" x1="263.25" x2="263.25" y1="66" y2="92"/><line class="fl-t-frame" x1="267.16666666666663" x2="267.16666666666663" y1="66" y2="92"/><line class="fl-t-frame" x1="271.0833333333333" x2="271.0833333333333" y1="66" y2="92"/><line class="fl-t-frame" x1="275" x2="275" y1="66" y2="92"/><line class="fl-t-frame" x1="278.91666666666663" x2="278.91666666666663" y1="66" y2="92"/><line class="fl-t-frame" x1="282.83333333333337" x2="282.83333333333337" y1="66" y2="92"/><line class="fl-t-frame" x1="286.75" x2="286.75" y1="66" y2="92"/><line class="fl-t-frame" x1="290.66666666666663" x2="290.66666666666663" y1="66" y2="92"/><line class="fl-t-frame" x1="294.5833333333333" x2="294.5833333333333" y1="66" y2="92"/><line class="fl-t-frame" x1="298.5" x2="298.5" y1="66" y2="92"/><line class="fl-t-frame" x1="302.4166666666667" x2="302.4166666666667" y1="66" y2="92"/><line class="fl-t-frame" x1="306.3333333333333" x2="306.3333333333333" y1="66" y2="92"/><line class="fl-t-frame" x1="310.25" x2="310.25" y1="66" y2="92"/><line class="fl-t-frame" x1="314.1666666666667" x2="314.1666666666667" y1="66" y2="92"/><line class="fl-t-frame" x1="318.0833333333333" x2="318.0833333333333" y1="66" y2="92"/><line class="fl-t-frame" x1="322" x2="322" y1="66" y2="92"/><line class="fl-t-frame" x1="325.91666666666663" x2="325.91666666666663" y1="66" y2="92"/><line class="fl-t-frame" x1="329.83333333333337" x2="329.83333333333337" y1="66" y2="92"/><line class="fl-t-frame" x1="333.75" x2="333.75" y1="66" y2="92"/><line class="fl-t-frame" x1="337.66666666666663" x2="337.66666666666663" y1="66" y2="92"/><line class="fl-t-frame" x1="341.58333333333337" x2="341.58333333333337" y1="66" y2="92"/><line class="fl-t-frame" x1="345.5" x2="345.5" y1="66" y2="92"/><line class="fl-t-frame" x1="349.4166666666667" x2="349.4166666666667" y1="66" y2="92"/><line class="fl-t-frame" x1="353.3333333333333" x2="353.3333333333333" y1="66" y2="92"/><line class="fl-t-frame" x1="357.25" x2="357.25" y1="66" y2="92"/><line class="fl-t-frame" x1="361.1666666666667" x2="361.1666666666667" y1="66" y2="92"/><line class="fl-t-frame" x1="365.0833333333333" x2="365.0833333333333" y1="66" y2="92"/><line class="fl-t-frame" x1="369" x2="369" y1="66" y2="92"/><line class="fl-t-frame" x1="372.9166666666667" x2="372.9166666666667" y1="66" y2="92"/><line class="fl-t-frame" x1="376.8333333333333" x2="376.8333333333333" y1="66" y2="92"/><line class="fl-t-frame" x1="380.75" x2="380.75" y1="66" y2="92"/><line class="fl-t-frame" x1="396.41666666666663" x2="396.41666666666663" y1="66" y2="92"/><line class="fl-t-frame" x1="400.33333333333337" x2="400.33333333333337" y1="66" y2="92"/><line class="fl-t-frame" x1="404.25" x2="404.25" y1="66" y2="92"/><line class="fl-t-frame" x1="408.1666666666667" x2="408.1666666666667" y1="66" y2="92"/><line class="fl-t-frame" x1="412.0833333333333" x2="412.0833333333333" y1="66" y2="92"/><line class="fl-t-frame" x1="416" x2="416" y1="66" y2="92"/><line class="fl-t-frame" x1="419.9166666666667" x2="419.9166666666667" y1="66" y2="92"/><line class="fl-t-frame" x1="423.8333333333333" x2="423.8333333333333" y1="66" y2="92"/><line class="fl-t-frame" x1="427.75" x2="427.75" y1="66" y2="92"/><line class="fl-t-frame" x1="431.6666666666667" x2="431.6666666666667" y1="66" y2="92"/><line class="fl-t-frame" x1="435.5833333333333" x2="435.5833333333333" y1="66" y2="92"/><line class="fl-t-frame" x1="439.5" x2="439.5" y1="66" y2="92"/><line class="fl-t-frame" x1="443.41666666666663" x2="443.41666666666663" y1="66" y2="92"/><line class="fl-t-frame" x1="447.33333333333337" x2="447.33333333333337" y1="66" y2="92"/><line class="fl-t-frame" x1="451.25" x2="451.25" y1="66" y2="92"/><line class="fl-t-frame" x1="455.16666666666663" x2="455.16666666666663" y1="66" y2="92"/><line class="fl-t-frame" x1="459.08333333333337" x2="459.08333333333337" y1="66" y2="92"/><line class="fl-t-frame" x1="463" x2="463" y1="66" y2="92"/><line class="fl-t-frame" x1="466.9166666666667" x2="466.9166666666667" y1="66" y2="92"/><line class="fl-t-frame" x1="470.8333333333333" x2="470.8333333333333" y1="66" y2="92"/><line class="fl-t-frame" x1="474.75" x2="474.75" y1="66" y2="92"/><line class="fl-t-frame" x1="478.6666666666667" x2="478.6666666666667" y1="66" y2="92"/><line class="fl-t-frame" x1="482.5833333333333" x2="482.5833333333333" y1="66" y2="92"/><line class="fl-t-frame" x1="486.5" x2="486.5" y1="66" y2="92"/><line class="fl-t-frame" x1="490.4166666666667" x2="490.4166666666667" y1="66" y2="92"/><line class="fl-t-frame" x1="494.3333333333333" x2="494.3333333333333" y1="66" y2="92"/><line class="fl-t-frame" x1="498.25" x2="498.25" y1="66" y2="92"/><line class="fl-t-frame" x1="502.16666666666663" x2="502.16666666666663" y1="66" y2="92"/><line class="fl-t-frame" x1="506.08333333333337" x2="506.08333333333337" y1="66" y2="92"/>
+        <line class="fl-t-dup" x1="98.75" x2="98.75" y1="66" y2="92"/><line class="fl-t-dup" x1="102.66666666666666" x2="102.66666666666666" y1="66" y2="92"/><line class="fl-t-dup" x1="243.66666666666669" x2="243.66666666666669" y1="66" y2="92"/><line class="fl-t-dup" x1="388.58333333333337" x2="388.58333333333337" y1="66" y2="92"/><line class="fl-t-dup" x1="392.5" x2="392.5" y1="66" y2="92"/>
+        <line class="fl-t-frame" x1="627.5" x2="627.5" y1="66" y2="92"/><line class="fl-t-frame" x1="745" x2="745" y1="66" y2="92"/><line class="fl-t-frame" x1="862.5" x2="862.5" y1="66" y2="92"/><line class="fl-t-frame" x1="980" x2="980" y1="66" y2="92"/>
+        <circle class="fl-t-tap" cx="87" cy="44" r="6"/><circle class="fl-t-tap" cx="169.25" cy="44" r="6"/><circle class="fl-t-tap" cx="224.08333333333334" cy="44" r="6"/><circle class="fl-t-tap" cx="337.66666666666663" cy="44" r="6"/><circle class="fl-t-tap" cx="447.33333333333337" cy="44" r="6"/>
+        <rect class="fl-t-screen" x="35" y="18" width="10" height="10" transform="rotate(45 40 23)"/><rect class="fl-t-screen" x="85.91666666666667" y="18" width="10" height="10" transform="rotate(45 90.91666666666667 23)"/><rect class="fl-t-screen" x="168.16666666666666" y="18" width="10" height="10" transform="rotate(45 173.16666666666666 23)"/><rect class="fl-t-screen" x="336.58333333333337" y="18" width="10" height="10" transform="rotate(45 341.58333333333337 23)"/>
+        <rect class="fl-t-zone" x="40" y="100" width="470" height="6"/>
+        <rect class="fl-t-zone is-idle" x="510" y="100" width="470" height="6"/>
+        <text class="fl-t-label" x="40" y="130">0:00</text><text class="fl-t-label" x="275" y="130">1:00</text><text class="fl-t-label" x="510" y="130">2:00</text><text class="fl-t-label" x="745" y="130">3:00</text><text class="fl-t-label" x="980" y="130">4:00</text>
+        <text class="fl-t-note" x="275" y="146">1 frame a second</text>
+        <text class="fl-t-note" x="745" y="146">idle: 1 every 30 s</text>
+      </svg>
+      <p class="fl-timeline-key"><span class="k-frame">Time-based frame</span><span class="k-tap">Tap</span><span class="k-screen">Screen change</span><span class="k-dup">Duplicate, dropped</span></p>
+    </figure>
+    <div class="fl-rules">
+      <section><h3>Three triggers</h3><ul><li><b>Every tap</b> captures what the person touched and what came next.</li><li><b>Every screen change</b> the SDK detects starts a new chapter.</li><li><b>Time:</b> one frame a second for the first 120 seconds, then one every 30 seconds while the app sits idle.</li></ul></section>
+      <section><h3>Two rules</h3><ul><li><b>Duplicates go.</b> Identical frames are removed automatically, so the file stays light.</li><li><b>Sensitive screens are blurred.</b> Fields tagged as password, user and similar are recognised and their data blurred on the device.</li></ul></section>
+      <section><h3>Read, not just seen</h3><ul><li>The <b>view hierarchy</b> of each screen, like a page’s DOM.</li><li><b>Accessibility tags</b>, where the app has them.</li><li><b>OCR</b> on every frame, captured as base64, so the text on screen becomes data.</li></ul></section>
+    </div>
+  </div></section>
+    <section id="analysis" class="fl-analysis"><div class="wrap lab-shell">
+    <h2>One file in, a readable journey out.</h2>
+    <div class="fl-scrolly" data-scrolly>
+      <ol class="fl-steps"><li class="fl-step" data-step="0">
+        <span class="fl-step-num">01</span>
+        <h3>Every session arrives on its own</h3>
+        <p>Sessions land in the library when they end. Once analysed, each one is named after what the person did. Nobody wrote a description.</p>
+      </li><li class="fl-step" data-step="1">
+        <span class="fl-step-num">02</span>
+        <h3>The journey, told in plain language</h3>
+        <p>Each session gets a verdict, completed or failed, the path it followed and a readable account of what worked and what needs attention.</p>
+      </li><li class="fl-step" data-step="2">
+        <span class="fl-step-num">03</span>
+        <h3>Replay, frame by frame</h3>
+        <p>The captured screens play back against the event timeline. A tap shows where it landed; the frames around it stay in reach.</p>
+      </li><li class="fl-step" data-step="3">
+        <span class="fl-step-num">04</span>
+        <h3>Where people tapped</h3>
+        <p>Taps collect on each screen as a matrix, so repeated taps on the same spot stand out instead of disappearing into a count.</p>
+      </li><li class="fl-step" data-step="4">
+        <span class="fl-step-num">05</span>
+        <h3>Errors, with the frame that proves them</h3>
+        <p>Every problem comes with the text read from the screen and the frame it appeared on, in the order it happened.</p>
+      </li><li class="fl-step" data-step="5">
+        <span class="fl-step-num">06</span>
+        <h3>Bottlenecks, named against principles</h3>
+        <p>Findings are checked against usability heuristics, each with a recommendation, so a designer knows where to look first.</p>
+      </li></ol>
+      <div class="fl-stage" aria-live="polite"><figure class="fl-stage-shot is-on" data-shot="0"><a class="zoom" href="assets/flowy-lab-library.webp" data-zoom aria-label="Enlarge image — Every session arrives on its own: Flowy platform, demo session."><img src="assets/flowy-lab-library.webp" alt="Every session arrives on its own: Flowy platform, demo session." loading="lazy" decoding="async"><span class="zoom-sign" aria-hidden="true">⤢</span></a></figure><figure class="fl-stage-shot" data-shot="1"><a class="zoom" href="assets/flowy-lab-overview.webp" data-zoom aria-label="Enlarge image — The journey, told in plain language: Flowy platform, demo session."><img src="assets/flowy-lab-overview.webp" alt="The journey, told in plain language: Flowy platform, demo session." loading="lazy" decoding="async"><span class="zoom-sign" aria-hidden="true">⤢</span></a></figure><figure class="fl-stage-shot" data-shot="2"><a class="zoom" href="assets/flowy-lab-replay.webp" data-zoom aria-label="Enlarge image — Replay, frame by frame: Flowy platform, demo session."><img src="assets/flowy-lab-replay.webp" alt="Replay, frame by frame: Flowy platform, demo session." loading="lazy" decoding="async"><span class="zoom-sign" aria-hidden="true">⤢</span></a></figure><figure class="fl-stage-shot" data-shot="3"><a class="zoom" href="assets/flowy-lab-heatmap.webp" data-zoom aria-label="Enlarge image — Where people tapped: Flowy platform, demo session."><img src="assets/flowy-lab-heatmap.webp" alt="Where people tapped: Flowy platform, demo session." loading="lazy" decoding="async"><span class="zoom-sign" aria-hidden="true">⤢</span></a></figure><figure class="fl-stage-shot" data-shot="4"><a class="zoom" href="assets/flowy-lab-errors.webp" data-zoom aria-label="Enlarge image — Errors, with the frame that proves them: Flowy platform, demo session."><img src="assets/flowy-lab-errors.webp" alt="Errors, with the frame that proves them: Flowy platform, demo session." loading="lazy" decoding="async"><span class="zoom-sign" aria-hidden="true">⤢</span></a></figure><figure class="fl-stage-shot" data-shot="5"><a class="zoom" href="assets/flowy-lab-ux.webp" data-zoom aria-label="Enlarge image — Bottlenecks, named against principles: Flowy platform, demo session."><img src="assets/flowy-lab-ux.webp" alt="Bottlenecks, named against principles: Flowy platform, demo session." loading="lazy" decoding="async"><span class="zoom-sign" aria-hidden="true">⤢</span></a></figure></div>
+    </div>
+    <aside class="lab-method"><p class="lab-method-tag">Built with DesAI Thinking</p><p>A research question decided what the SDK had to capture. The model writes the first account of every session, at speed; a designer checks it against the replay before anything is acted on. AI as operational support, judgement as the bottleneck.</p><a class="lab-link" href="method.html">How the method works →</a></aside>
+  </div></section>
+    <section class="fl-caught"><div class="wrap lab-shell">
+    <div class="fl-diff">
+      <div class="fl-diff-side is-log">
+        <p class="fl-diff-label">Technical log</p>
+        <pre><code>POST /notifications
+<b>200 OK</b>
+payload valid
+<span class="ok">✓ PASS</span></code></pre>
+      </div>
+      <div class="fl-diff-side is-flowy">
+        <p class="fl-diff-label">Flowy</p>
+        <pre><code>FRAME 0:41 · in-app notification
+OCR: content does not match
+the action just completed
+<span class="ko">✗ DEFECT</span></code></pre>
+      </div>
+    </div>
+    <p class="fl-caught-line">The API answered correctly. The notification the person saw was wrong. Technical logs called it a pass; reading the screen caught it.</p>
+  </div></section>
+    <section id="results" class="fl-results"><div class="wrap lab-shell">
+    <h2>What changed.</h2>
+    <div class="fl-score">
+      <article class="fl-zero">
+        <p class="fl-big">0</p>
+        <h3>Effort asked of the tester</h3>
+        <p>Reporting is completely transparent. Nobody shakes, writes or chooses what to send.</p>
+      </article>
+      <article class="fl-zero">
+        <p class="fl-big">0</p>
+        <h3>Testers lost to reporting fatigue</h3>
+        <p>Churn that can be attributed to the effort of reporting alone.</p>
+      </article>
+      <article>
+        <p class="fl-big is-accent">&gt;50<small>%</small></p>
+        <h3>More tickets, estimated</h3>
+        <p>Estimated from interviews: we compared the problems testers had reported with the problems they knew about but had never reported. Most report the first issue of the day and fewer after it; Flowy captures the rest without asking.</p>
+      </article>
+    </div>
+    <div class="fl-recog">
+      <h3>How much of the journey the model rebuilds</h3>
+      <div class="fl-recog-row"><p><b>≈85%</b> Local model (Gemma 4 E4B)</p><div class="fl-dots" role="img" aria-label="About 8.5 of 10 actions recognised"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="half"></i><i class=""></i></div></div>
+      <div class="fl-recog-row"><p><b>Near-total</b> Frontier models, same log</p><div class="fl-dots" role="img" aria-label="Almost all actions recognised"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="half"></i></div></div>
+      <p class="fl-recog-note">Just over 8 actions in 10 with the local model, which is not optimised for this job: some OCR misreads and a less tidy reconstruction of the flow. The same log on frontier models came back almost complete, with small doubts only where the screen reading disagreed with the OCR report.</p>
+    </div>
+  </div></section>
+    <section id="files" class="lab-notes"><div class="wrap lab-shell">
+      <h2>The working files.</h2>
+      <p class="lab-files-lede">Two journeys, the service blueprint with its technology, the information architecture and every screen of the dashboard.</p>
+      <div class="lab-files"><section class="lab-file" id="tester-journey" aria-labelledby="tester-journey-title">
+    <header class="lab-file-head"><span class="lab-num" aria-hidden="true">1</span><h3 id="tester-journey-title">Tester journey, before and with Flowy</h3><p>What a tester does when something goes wrong, and what reaches the team as a result.</p></header>
+    <div class="lab-journey" data-lab-tabs><div class="lab-jmap-scroll"><div class="lab-jmap" style="--n:6">
+    <p class="lab-jrow-label is-head"></p>
+    <div class="lab-jhead" data-tab-list aria-label="Tester journey steps"><button type="button" id="tj-tab-start" data-lab-tab aria-controls="tj-stage-start" data-col="0"><span>01</span>Start testing</button><button type="button" id="tj-tab-problem" data-lab-tab aria-controls="tj-stage-problem" data-col="1"><span>02</span>Hit a problem</button><button type="button" id="tj-tab-report" data-lab-tab aria-controls="tj-stage-report" data-col="2"><span>03</span>Report it</button><button type="button" id="tj-tab-again" data-lab-tab aria-controls="tj-stage-again" data-col="3"><span>04</span>Hit the next one</button><button type="button" id="tj-tab-friction" data-lab-tab aria-controls="tj-stage-friction" data-col="4"><span>05</span>Struggle without noticing</button><button type="button" id="tj-tab-end" data-lab-tab aria-controls="tj-stage-end" data-col="5"><span>06</span>Finish the session</button></div>
+    <p class="lab-jrow-label is-curve">Tester effort<span><b class="k-was">Before</b><b class="k-now">With Flowy</b></span></p>
+    <div class="lab-jcurve" role="img" aria-label="Tester effort at each step: before and with flowy.">
+      <span class="lab-jaxis" aria-hidden="true"><i>High</i><i>Medium</i><i>Low</i></span>
+      <svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+        <line x1="0" x2="100" y1="16" y2="16" class="grid"/><line x1="0" x2="100" y1="50" y2="50" class="grid"/><line x1="0" x2="100" y1="84" y2="84" class="grid"/>
+        <polyline class="was" points="8.333333333333332,84 25,50 41.66666666666667,16 58.333333333333336,16 75,84 91.66666666666666,84"/><polyline class="now" points="8.333333333333332,84 25,84 41.66666666666667,84 58.333333333333336,84 75,84 91.66666666666666,84"/>
+      </svg>
+      <i class="dot was" style="left:8.333333333333332%;top:84%"></i><i class="dot now" style="left:8.333333333333332%;top:84%"></i><i class="dot was" style="left:25%;top:50%"></i><i class="dot now" style="left:25%;top:84%"></i><i class="dot was" style="left:41.66666666666667%;top:16%"></i><i class="dot now" style="left:41.66666666666667%;top:84%"></i><i class="dot was" style="left:58.333333333333336%;top:16%"></i><i class="dot now" style="left:58.333333333333336%;top:84%"></i><i class="dot was" style="left:75%;top:84%"></i><i class="dot now" style="left:75%;top:84%"></i><i class="dot was" style="left:91.66666666666666%;top:84%"></i><i class="dot now" style="left:91.66666666666666%;top:84%"></i>
+    </div>
+    <p class="lab-jrow-label is-before">Before</p><div class="lab-jcell is-before" data-col="0">Opens the beta build and starts the day’s tasks.</div><div class="lab-jcell is-before" data-col="1">Notices something odd and has to judge whether it is a bug worth reporting.</div><div class="lab-jcell is-before" data-col="2">Shakes the phone, writes a description, hopes the one screenshot shows the problem.</div><div class="lab-jcell is-before" data-col="3">Reports the first issue of the day, then fewer and fewer.</div><div class="lab-jcell is-before" data-col="4">Hesitates, taps twice, takes a detour. None of it feels worth a report.</div><div class="lab-jcell is-before" data-col="5">Closes the app.</div><p class="lab-jrow-label is-after">With Flowy</p><div class="lab-jcell is-after" data-col="0">Same. The SDK starts recording silently; there is nothing to switch on.</div><div class="lab-jcell is-after" data-col="1">Carries on. The moment is in the session whether they notice it or not.</div><div class="lab-jcell is-after" data-col="2">Nothing to do. Reporting is completely transparent.</div><div class="lab-jcell is-after" data-col="3">Nothing changes for the tester: every issue lands in a session.</div><div class="lab-jcell is-after" data-col="4">Same experience. The SDK records the taps, blocks and returns.</div><div class="lab-jcell is-after" data-col="5">Closes the app. The session file is sent automatically, light enough not to notice.</div>
+    <p class="lab-jline" aria-hidden="true"><span>Line of interaction</span></p>
+    <p class="lab-jrow-label is-back">Team receives, before</p><div class="lab-jcell is-back" data-col="0">Nothing yet.</div><div class="lab-jcell is-back" data-col="1">Nothing, unless the tester decides to report.</div><div class="lab-jcell is-back" data-col="2">Technical logs, one screenshot and the tester’s own words.</div><div class="lab-jcell is-back" data-col="3">A shrinking share of what went wrong.</div><div class="lab-jcell is-back" data-col="4">Invisible.</div><div class="lab-jcell is-back" data-col="5">Whatever was reported during the day.</div><p class="lab-jrow-label is-front">Team receives, with Flowy</p><div class="lab-jcell is-front" data-col="0">A session begins: events, frames and the text on screen.</div><div class="lab-jcell is-front" data-col="1">The frames before and after, the taps and the text on screen.</div><div class="lab-jcell is-front" data-col="2">The whole journey, not just the moment.</div><div class="lab-jcell is-front" data-col="3">The issues the tester would have skipped.</div><div class="lab-jcell is-front" data-col="4">Rage taps, blocks and detours, flagged by the analysis.</div><div class="lab-jcell is-front" data-col="5">A complete session, ready to analyse.</div>
+    <p class="lab-jrow-label is-result">Measured</p><div class="lab-jcell is-result" data-col="0"></div><div class="lab-jcell is-result" data-col="1"></div><div class="lab-jcell is-result" data-col="2"><b>0</b> <small>tester effort</small></div><div class="lab-jcell is-result" data-col="3"><b>>50%</b> <small>more tickets, estimated</small></div><div class="lab-jcell is-result" data-col="4"></div><div class="lab-jcell is-result" data-col="5"></div>
+  </div></div><p class="lab-files-note">Effort levels are estimates. Select a step to look closer.</p><article class="lab-stage is-text" id="tj-stage-start" data-tab-panel>
+      <div class="lab-stage-text">
+        <p class="lab-stage-step">Step 1 of 6</p>
+        <h4>Start testing</h4>
+        <p class="lab-stage-note">Nothing to learn and nothing to turn on: the SDK ships inside the app build.</p>
+      </div>
+      
+    </article><article class="lab-stage is-text" id="tj-stage-problem" data-tab-panel>
+      <div class="lab-stage-text">
+        <p class="lab-stage-step">Step 2 of 6</p>
+        <h4>Hit a problem</h4>
+        <p class="lab-stage-note">Before, a defect existed for the team only if an unpaid tester judged it worth reporting.</p>
+      </div>
+      
+    </article><article class="lab-stage is-text" id="tj-stage-report" data-tab-panel>
+      <div class="lab-stage-text">
+        <p class="lab-stage-step">Step 3 of 6</p>
+        <h4>Report it</h4>
+        <p class="lab-stage-note">The old tool depended on the tester describing the defect well enough for someone else to rebuild it, from technical logs and a single screenshot.</p>
+      </div>
+      
+    </article><article class="lab-stage is-text" id="tj-stage-again" data-tab-panel>
+      <div class="lab-stage-text">
+        <p class="lab-stage-step">Step 4 of 6</p>
+        <h4>Hit the next one</h4>
+        <p class="lab-stage-note">Surveys and interviews showed testers report the first issue of the day and fewer after it. Testers lost to reporting fatigue: 0.</p>
+      </div>
+      
+    </article><article class="lab-stage is-text" id="tj-stage-friction" data-tab-panel>
+      <div class="lab-stage-text">
+        <p class="lab-stage-step">Step 5 of 6</p>
+        <h4>Struggle without noticing</h4>
+        <p class="lab-stage-note">The most useful CX evidence was the least likely ever to be reported, because the person didn’t experience it as a bug.</p>
+      </div>
+      
+    </article><article class="lab-stage is-text" id="tj-stage-end" data-tab-panel>
+      <div class="lab-stage-text">
+        <p class="lab-stage-step">Step 6 of 6</p>
+        <h4>Finish the session</h4>
+        <p class="lab-stage-note">One frame a second for the first 120 seconds, then one every 30 seconds while idle. Duplicates are dropped and sensitive fields blurred before the file leaves the device.</p>
+      </div>
+      
+    </article></div>
+  </section><section class="lab-file" id="designer-journey" aria-labelledby="designer-journey-title">
+    <header class="lab-file-head"><span class="lab-num" aria-hidden="true">2</span><h3 id="designer-journey-title">Designer journey, without and with CX logs</h3><p>The person who analyses the sessions: from rebuilding a story out of logs to checking one that is already told.</p></header>
+    <div class="lab-journey" data-lab-tabs><div class="lab-jmap-scroll"><div class="lab-jmap" style="--n:6">
+    <p class="lab-jrow-label is-head"></p>
+    <div class="lab-jhead" data-tab-list aria-label="Designer journey steps"><button type="button" id="dj-tab-collect" data-lab-tab aria-controls="dj-stage-collect" data-col="0"><span>01</span>Collect sessions</button><button type="button" id="dj-tab-rebuild" data-lab-tab aria-controls="dj-stage-rebuild" data-col="1"><span>02</span>Rebuild what happened</button><button type="button" id="dj-tab-cause" data-lab-tab aria-controls="dj-stage-cause" data-col="2"><span>03</span>Find the root cause</button><button type="button" id="dj-tab-friction" data-lab-tab aria-controls="dj-stage-friction" data-col="3"><span>04</span>Spot unreported friction</button><button type="button" id="dj-tab-insight" data-lab-tab aria-controls="dj-stage-insight" data-col="4"><span>05</span>Turn it into insight</button><button type="button" id="dj-tab-handoff" data-lab-tab aria-controls="dj-stage-handoff" data-col="5"><span>06</span>Hand it off</button></div>
+    <p class="lab-jrow-label is-curve">Analysis effort<span><b class="k-was">Before</b><b class="k-now">With Flowy</b></span></p>
+    <div class="lab-jcurve" role="img" aria-label="Analysis effort at each step: before and with flowy.">
+      <span class="lab-jaxis" aria-hidden="true"><i>High</i><i>Medium</i><i>Low</i></span>
+      <svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+        <line x1="0" x2="100" y1="16" y2="16" class="grid"/><line x1="0" x2="100" y1="50" y2="50" class="grid"/><line x1="0" x2="100" y1="84" y2="84" class="grid"/>
+        <polyline class="was" points="8.333333333333332,50 25,16 41.66666666666667,16 58.333333333333336,16 75,16 91.66666666666666,50"/><polyline class="now" points="8.333333333333332,84 25,84 41.66666666666667,50 58.333333333333336,84 75,50 91.66666666666666,84"/>
+      </svg>
+      <i class="dot was" style="left:8.333333333333332%;top:50%"></i><i class="dot now" style="left:8.333333333333332%;top:84%"></i><i class="dot was" style="left:25%;top:16%"></i><i class="dot now" style="left:25%;top:84%"></i><i class="dot was" style="left:41.66666666666667%;top:16%"></i><i class="dot now" style="left:41.66666666666667%;top:50%"></i><i class="dot was" style="left:58.333333333333336%;top:16%"></i><i class="dot now" style="left:58.333333333333336%;top:84%"></i><i class="dot was" style="left:75%;top:16%"></i><i class="dot now" style="left:75%;top:50%"></i><i class="dot was" style="left:91.66666666666666%;top:50%"></i><i class="dot now" style="left:91.66666666666666%;top:84%"></i>
+    </div>
+    <p class="lab-jrow-label is-before">Before</p><div class="lab-jcell is-before" data-col="0">Waits for reports: technical logs and one screenshot, only when a tester bothered.</div><div class="lab-jcell is-before" data-col="1">Pieces the path together from logs and the tester’s description.</div><div class="lab-jcell is-before" data-col="2">Often impossible from one screenshot; goes back to the tester or the developers.</div><div class="lab-jcell is-before" data-col="3">Can’t: if nobody reported it, it isn’t in the data.</div><div class="lab-jcell is-before" data-col="4">Interprets the experience from the tester’s words.</div><div class="lab-jcell is-before" data-col="5">Writes the ticket and the steps to reproduce from scratch.</div><p class="lab-jrow-label is-after">With Flowy</p><div class="lab-jcell is-after" data-col="0">Every session arrives in the library on its own.</div><div class="lab-jcell is-after" data-col="1">Reads the flow and the replay, reconstructed automatically.</div><div class="lab-jcell is-after" data-col="2">Looks at the frames around the error and the text read from the screen.</div><div class="lab-jcell is-after" data-col="3">Checks the flagged rage taps and blocks, and the tap heatmap.</div><div class="lab-jcell is-after" data-col="4">Starts from a plain-language account and bottlenecks named against UX principles.</div><div class="lab-jcell is-after" data-col="5">Hands off findings with their evidence, plus a test script that replays the flow.</div>
+    <p class="lab-jline" aria-hidden="true"><span>Line of interaction</span></p>
+    <p class="lab-jrow-label is-front">Where in Flowy</p><div class="lab-jcell is-front" data-col="0">Sessions library</div><div class="lab-jcell is-front" data-col="1">Flow · Replay</div><div class="lab-jcell is-front" data-col="2">Errors</div><div class="lab-jcell is-front" data-col="3">Heatmap · UX insights</div><div class="lab-jcell is-front" data-col="4">Overview · UX insights</div><div class="lab-jcell is-front" data-col="5">Errors · Test script</div><p class="lab-jrow-label is-back">Still needs a person</p><div class="lab-jcell is-back" data-col="0">Approving the sessions worth keeping.</div><div class="lab-jcell is-back" data-col="1">Checking the reconstruction where the model was unsure.</div><div class="lab-jcell is-back" data-col="2">Confirming the cause with the developers.</div><div class="lab-jcell is-back" data-col="3">Deciding which signals are real friction.</div><div class="lab-jcell is-back" data-col="4">Judging each recommendation before acting on it.</div><div class="lab-jcell is-back" data-col="5">Prioritising what goes first.</div>
+    <p class="lab-jrow-label is-result">Measured</p><div class="lab-jcell is-result" data-col="0"></div><div class="lab-jcell is-result" data-col="1"><b>≈85%</b> <small>actions recognised, local model</small></div><div class="lab-jcell is-result" data-col="2"></div><div class="lab-jcell is-result" data-col="3"></div><div class="lab-jcell is-result" data-col="4"></div><div class="lab-jcell is-result" data-col="5"></div>
+  </div></div><p class="lab-files-note">Effort levels are estimates. Select a step to look closer.</p><article class="lab-stage" id="dj-stage-collect" data-tab-panel>
+      <div class="lab-stage-text">
+        <p class="lab-stage-step">Step 1 of 6 · Sessions library</p>
+        <h4>Collect sessions</h4>
+        <p class="lab-stage-note">Sessions are sent at the end of every session. The designer starts from a complete list, not an inbox of complaints.</p>
+      </div>
+      <a class="zoom lab-stage-shot" data-zoom href="assets/flowy-lab-library.webp"><img src="assets/flowy-lab-library.webp" alt="Sessions library in Flowy, demo session." loading="lazy" decoding="async"><span class="zoom-sign" aria-hidden="true">⤢</span></a>
+    </article><article class="lab-stage" id="dj-stage-rebuild" data-tab-panel>
+      <div class="lab-stage-text">
+        <p class="lab-stage-step">Step 2 of 6 · Replay</p>
+        <h4>Rebuild what happened</h4>
+        <p class="lab-stage-note">With the local model just over 8 actions in 10 are recognised. Frontier models rebuild the same log almost completely.</p>
+      </div>
+      <a class="zoom lab-stage-shot" data-zoom href="assets/flowy-lab-replay.webp"><img src="assets/flowy-lab-replay.webp" alt="Replay in Flowy, demo session." loading="lazy" decoding="async"><span class="zoom-sign" aria-hidden="true">⤢</span></a>
+    </article><article class="lab-stage" id="dj-stage-cause" data-tab-panel>
+      <div class="lab-stage-text">
+        <p class="lab-stage-step">Step 3 of 6 · Errors</p>
+        <h4>Find the root cause</h4>
+        <p class="lab-stage-note">In the first adoptions this caught a defect the technical logs had passed: the API answered correctly, the in-app notification was wrong.</p>
+      </div>
+      <a class="zoom lab-stage-shot" data-zoom href="assets/flowy-lab-errors.webp"><img src="assets/flowy-lab-errors.webp" alt="Errors in Flowy, demo session." loading="lazy" decoding="async"><span class="zoom-sign" aria-hidden="true">⤢</span></a>
+    </article><article class="lab-stage" id="dj-stage-friction" data-tab-panel>
+      <div class="lab-stage-text">
+        <p class="lab-stage-step">Step 4 of 6 · Heatmap</p>
+        <h4>Spot unreported friction</h4>
+        <p class="lab-stage-note">Taps collect per screen, so repeated taps on one spot stand out instead of disappearing into a count.</p>
+      </div>
+      <a class="zoom lab-stage-shot" data-zoom href="assets/flowy-lab-heatmap.webp"><img src="assets/flowy-lab-heatmap.webp" alt="Heatmap in Flowy, demo session." loading="lazy" decoding="async"><span class="zoom-sign" aria-hidden="true">⤢</span></a>
+    </article><article class="lab-stage" id="dj-stage-insight" data-tab-panel>
+      <div class="lab-stage-text">
+        <p class="lab-stage-step">Step 5 of 6 · UX insights</p>
+        <h4>Turn it into insight</h4>
+        <p class="lab-stage-note">The account is a starting point. The designer checks it against the replay before acting on it.</p>
+      </div>
+      <a class="zoom lab-stage-shot" data-zoom href="assets/flowy-lab-ux.webp"><img src="assets/flowy-lab-ux.webp" alt="UX insights in Flowy, demo session." loading="lazy" decoding="async"><span class="zoom-sign" aria-hidden="true">⤢</span></a>
+    </article><article class="lab-stage" id="dj-stage-handoff" data-tab-panel>
+      <div class="lab-stage-text">
+        <p class="lab-stage-step">Step 6 of 6 · Test script</p>
+        <h4>Hand it off</h4>
+        <p class="lab-stage-note">A test script reproduces the flow, and every finding carries the evidence behind it.</p>
+      </div>
+      <a class="zoom lab-stage-shot" data-zoom href="assets/flowy-lab-test-script.webp"><img src="assets/flowy-lab-test-script.webp" alt="Test script in Flowy, demo session." loading="lazy" decoding="async"><span class="zoom-sign" aria-hidden="true">⤢</span></a>
+    </article></div>
+  </section><section class="lab-file" id="blueprint" aria-labelledby="blueprint-title">
+    <header class="lab-file-head"><span class="lab-num" aria-hidden="true">3</span><h3 id="blueprint-title">Service blueprint and technology stack</h3><p>From the first tap to the designer’s review: what the tester sees (nothing), what the SDK and platform do behind it, and the technology at each step.</p></header>
+    <div class="lab-jmap-scroll fl-blueprint"><div class="lab-jmap" style="--n:7">
+    <p class="lab-jrow-label is-head"></p>
+    <div class="lab-jhead"><p><span>01</span>Session starts</p><p><span>02</span>Person uses the app</p><p><span>03</span>A frame is taken</p><p><span>04</span>Session ends</p><p><span>05</span>Stored</p><p><span>06</span>Analysed</p><p><span>07</span>Reviewed</p></div>
+    <p class="lab-jrow-label is-front">Physical evidence</p><div class="lab-jcell is-front">The app, unchanged</div><div class="lab-jcell is-front">The app’s own screens</div><div class="lab-jcell is-front">Nothing: no prompt, no shake</div><div class="lab-jcell is-front">Nothing</div><div class="lab-jcell is-empty">—</div><div class="lab-jcell is-empty">—</div><div class="lab-jcell is-front">The Flowy dashboard</div><p class="lab-jrow-label is-people">Tester</p><div class="lab-jcell is-people">Opens the app</div><div class="lab-jcell is-people">Taps, scrolls, types</div><div class="lab-jcell is-empty">—</div><div class="lab-jcell is-people">Closes the app</div><div class="lab-jcell is-empty">—</div><div class="lab-jcell is-empty">—</div><div class="lab-jcell is-empty">—</div><p class="lab-jline" aria-hidden="true"><span>Line of interaction</span></p><p class="lab-jrow-label is-empty">Visible to the tester</p><div class="lab-jcell is-empty">Nothing</div><div class="lab-jcell is-empty">Nothing</div><div class="lab-jcell is-empty">Nothing</div><div class="lab-jcell is-empty">Nothing</div><div class="lab-jcell is-empty">—</div><div class="lab-jcell is-empty">—</div><div class="lab-jcell is-empty">—</div><p class="lab-jline is-visibility" aria-hidden="true"><span>Line of visibility</span></p><p class="lab-jrow-label is-back">SDK, on the device</p><div class="lab-jcell is-back">Starts a session; hooks touches and screen changes</div><div class="lab-jcell is-back">Logs every tap, scroll and screen change with a timestamp</div><div class="lab-jcell is-back">Snapshot as base64; reads the view hierarchy and accessibility tags; OCR; drops duplicates; blurs sensitive fields</div><div class="lab-jcell is-back">Bundles events and frames into one session file and sends it</div><div class="lab-jcell is-empty">—</div><div class="lab-jcell is-empty">—</div><div class="lab-jcell is-empty">—</div><p class="lab-jrow-label is-back">Platform</p><div class="lab-jcell is-empty">—</div><div class="lab-jcell is-empty">—</div><div class="lab-jcell is-empty">—</div><div class="lab-jcell is-empty">—</div><div class="lab-jcell is-back">Receives the file and stores the session</div><div class="lab-jcell is-back">A multimodal model rebuilds the journey: flow, rage taps, blocks, errors, successes and a verdict</div><div class="lab-jcell is-back">Serves overview, flow, replay, heatmap, errors, UX insights and test script</div><p class="lab-jrow-label is-people">Designer</p><div class="lab-jcell is-empty">—</div><div class="lab-jcell is-empty">—</div><div class="lab-jcell is-empty">—</div><div class="lab-jcell is-empty">—</div><div class="lab-jcell is-empty">—</div><div class="lab-jcell is-empty">—</div><div class="lab-jcell is-people">Reviews, verifies in the replay, approves, tags and hands off</div><p class="lab-jrow-label is-tech">Technology</p><div class="lab-jcell is-tech">Swift package · UIKit and SwiftUI hooks</div><div class="lab-jcell is-tech">Timestamped event log</div><div class="lab-jcell is-tech">Apple Vision OCR on iOS; ML Kit on Android (experimental) · JPEG as base64</div><div class="lab-jcell is-tech">Session bundle as JSON</div><div class="lab-jcell is-tech">Next.js API routes · file storage</div><div class="lab-jcell is-tech">Ollama + Gemma 4 E4B, running locally · Gemini 2.5 Flash as a cloud option</div><div class="lab-jcell is-tech">Next.js · React · Tailwind</div>
+  </div></div>
+  </section><section class="lab-file" id="architecture" aria-labelledby="architecture-title">
+    <header class="lab-file-head"><span class="lab-num" aria-hidden="true">4</span><h3 id="architecture-title">Information architecture</h3><p>Two levels: a library of sessions, and a report per session whose left navigation opens eleven views. Approve, tags, filters and delete are actions on those views, not screens of their own. Hover a view to preview it; select it to find its screen below.</p></header>
+    <p class="lab-gkey sg-key"><span class="is-page">View</span><span class="k-flow">Flow</span><span class="k-cross">Shortcut</span><span class="k-spine">Report navigation</span></p>
+  <div class="lab-canvas sg" data-canvas data-graph data-w="1300" data-h="660" role="region" aria-label="Flowy dashboard information architecture" tabindex="0">
+    <div class="lab-canvas-size"><div class="lab-canvas-inner" style="width:1300px;height:660px"><p class="lab-gband" style="--band-y:24px">Library</p><p class="lab-gband" style="--band-y:184px">Session report</p><p class="lab-gband" style="--band-y:344px">Findings</p><p class="lab-gband" style="--band-y:504px">Hand-off</p><svg class="sg-wires" viewBox="0 0 1300 660" aria-hidden="true">
+    <defs><marker id="fl-ia-flow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 1 L9 5 L0 9 Z" class="sg-arrow is-flow"/></marker><marker id="fl-ia-cross" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 1 L9 5 L0 9 Z" class="sg-arrow is-cross"/></marker></defs>
+    <g class="sg-spine"><path d="M60 258 V578"/><path d="M60 258 H110" marker-end="url(#fl-ia-flow)"/><path d="M60 418 H110" marker-end="url(#fl-ia-flow)"/><path d="M60 578 H110" marker-end="url(#fl-ia-flow)"/></g><g class="sg-edge is-flow" data-from="home" data-to="library"><path d="M350 98 H400" marker-end="url(#fl-ia-flow)"/></g><g class="sg-edge is-flow" data-from="library" data-to="upload"><path d="M640 98 H690" marker-end="url(#fl-ia-flow)"/></g><g class="sg-edge is-flow" data-from="upload" data-to="pending"><path d="M930 98 H980" marker-end="url(#fl-ia-flow)"/><text x="955" y="90">New session</text></g><g class="sg-edge is-flow" data-from="overview" data-to="flow"><path d="M350 258 H400" marker-end="url(#fl-ia-flow)"/></g><g class="sg-edge is-flow" data-from="flow" data-to="replay"><path d="M640 258 H690" marker-end="url(#fl-ia-flow)"/></g><g class="sg-edge is-flow" data-from="replay" data-to="heatmap"><path d="M930 258 H980" marker-end="url(#fl-ia-flow)"/></g><g class="sg-edge is-flow" data-from="errors" data-to="successes"><path d="M350 418 H400" marker-end="url(#fl-ia-flow)"/></g><g class="sg-edge is-flow" data-from="successes" data-to="ux"><path d="M640 418 H690" marker-end="url(#fl-ia-flow)"/></g><g class="sg-edge is-flow" data-from="ux" data-to="feedback"><path d="M930 418 H980" marker-end="url(#fl-ia-flow)"/></g><g class="sg-edge is-flow" data-from="technical" data-to="test-script"><path d="M350 578 H400" marker-end="url(#fl-ia-flow)"/></g><g class="sg-edge is-flow" data-from="test-script" data-to="settings"><path d="M640 578 H690" marker-end="url(#fl-ia-flow)"/></g><g class="sg-edge is-cross" data-from="pending" data-to="overview"><path d="M980,106 C728,106 602,266 350,266" marker-end="url(#fl-ia-cross)"/><text x="665" y="180">Analyse</text></g><g class="sg-edge is-cross" data-from="library" data-to="overview"><path d="M400,106 C340,106 410,266 350,266" marker-end="url(#fl-ia-cross)"/><text x="375" y="180">Open a session</text></g><g class="sg-edge is-cross" data-from="home" data-to="overview"><path d="M248,140 C248,200 248,156 248,216" marker-end="url(#fl-ia-cross)"/><text x="248" y="172">Latest report</text></g><g class="sg-edge is-cross" data-from="settings" data-to="library"><path d="M828,536 C828,357.79999999999995 538,318.20000000000005 538,140" marker-end="url(#fl-ia-cross)"/><text x="683" y="332">Approved for the team</text></g>
+  </svg><p class="sg-spine-label" style="left:52px;top:236px">Report nav</p><a class="sg-node is-page" id="map-home" data-node="home" href="#screen-home" data-peek="assets/flowy-lab-home.webp" data-peek-label="Select to find its screen ↓" style="left:110px;top:56px;width:240px;height:84px"><b>Home</b><small>Statement · latest session · open the library</small></a><a class="sg-node is-page" id="map-library" data-node="library" href="#screen-library" data-peek="assets/flowy-lab-library.webp" data-peek-label="Select to find its screen ↓" style="left:400px;top:56px;width:240px;height:84px"><b>Sessions library</b><small>Search · status and model filters · approve · delete</small></a><a class="sg-node is-page" id="map-upload" data-node="upload" href="#screen-upload" data-peek="assets/flowy-lab-upload.webp" data-peek-label="Select to find its screen ↓" style="left:690px;top:56px;width:240px;height:84px"><b>Upload a session</b><small>Drop the SDK’s JSON log</small></a><a class="sg-node is-page" id="map-pending" data-node="pending" href="#screen-pending" data-peek="assets/flowy-lab-pending.webp" data-peek-label="Select to find its screen ↓" style="left:980px;top:56px;width:240px;height:84px"><b>Generate the report</b><small>Cloud model or local model</small></a><a class="sg-node is-page" id="map-overview" data-node="overview" href="#screen-overview" data-peek="assets/flowy-lab-overview.webp" data-peek-label="Select to find its screen ↓" style="left:110px;top:216px;width:240px;height:84px"><b>Overview</b><small>Verdict · journey · what worked · attention points</small></a><a class="sg-node is-page" id="map-flow" data-node="flow" href="#screen-flow" data-peek="assets/flowy-lab-flow.webp" data-peek-label="Select to find its screen ↓" style="left:400px;top:216px;width:240px;height:84px"><b>Flow</b><small>Phases with their screens and steps</small></a><a class="sg-node is-page" id="map-replay" data-node="replay" href="#screen-replay" data-peek="assets/flowy-lab-replay.webp" data-peek-label="Select to find its screen ↓" style="left:690px;top:216px;width:240px;height:84px"><b>Replay</b><small>Frame by frame against the event timeline</small></a><a class="sg-node is-page" id="map-heatmap" data-node="heatmap" href="#screen-heatmap" data-peek="assets/flowy-lab-heatmap.webp" data-peek-label="Select to find its screen ↓" style="left:980px;top:216px;width:240px;height:84px"><b>Heatmap</b><small>Taps per screen</small></a><a class="sg-node is-page" id="map-errors" data-node="errors" href="#screen-errors" data-peek="assets/flowy-lab-errors.webp" data-peek-label="Select to find its screen ↓" style="left:110px;top:376px;width:240px;height:84px"><b>Errors</b><small>Text on screen + the frame</small></a><a class="sg-node is-page" id="map-successes" data-node="successes" href="#screen-successes" data-peek="assets/flowy-lab-successes.webp" data-peek-label="Select to find its screen ↓" style="left:400px;top:376px;width:240px;height:84px"><b>Successes</b></a><a class="sg-node is-page" id="map-ux" data-node="ux" href="#screen-ux" data-peek="assets/flowy-lab-ux.webp" data-peek-label="Select to find its screen ↓" style="left:690px;top:376px;width:240px;height:84px"><b>UX insights</b><small>Heuristics and recommendations</small></a><a class="sg-node is-page" id="map-feedback" data-node="feedback" href="#screen-feedback" data-peek="assets/flowy-lab-feedback.webp" data-peek-label="Select to find its screen ↓" style="left:980px;top:376px;width:240px;height:84px"><b>Tester feedback</b></a><a class="sg-node is-page" id="map-technical" data-node="technical" href="#screen-technical" data-peek="assets/flowy-lab-technical.webp" data-peek-label="Select to find its screen ↓" style="left:110px;top:536px;width:240px;height:84px"><b>Technical notes</b><small>Event counts, capture facts</small></a><a class="sg-node is-page" id="map-test-script" data-node="test-script" href="#screen-test-script" data-peek="assets/flowy-lab-test-script.webp" data-peek-label="Select to find its screen ↓" style="left:400px;top:536px;width:240px;height:84px"><b>Test script</b><small>A test that replays the flow</small></a><a class="sg-node is-page" id="map-settings" data-node="settings" href="#screen-settings" data-peek="assets/flowy-lab-settings.webp" data-peek-label="Select to find its screen ↓" style="left:690px;top:536px;width:240px;height:84px"><b>Session settings</b><small>Approve · tags · attach frames</small></a></div></div>
+  </div><p class="lab-canvas-hint" aria-hidden="true">Drag sideways to explore →</p>
+  </section><section class="lab-file" id="screen-flow" aria-labelledby="screen-flow-title">
+    <header class="lab-file-head"><span class="lab-num" aria-hidden="true">5</span><h3 id="screen-flow-title">Screen flow</h3><p>Every view of the dashboard, connected as a designer moves through it. Hover to enlarge, select to open full size. Demo session throughout.</p></header>
+    <div class="lab-canvas" data-canvas data-w="1310" data-h="1000" role="region" aria-label="Flowy dashboard screen flow" tabindex="0">
+    <div class="lab-canvas-size"><div class="lab-canvas-inner" style="width:1310px;height:1000px"><p class="lab-gband" style="--band-y:18px">Entry</p><p class="lab-gband" style="--band-y:262px">Session report</p><p class="lab-gband" style="--band-y:506px">Findings</p><p class="lab-gband" style="--band-y:750px">Hand-off and settings</p><svg class="graph-wires" viewBox="0 0 1310 1000" aria-hidden="true">
+    <defs><marker id="arrow-fl-screens" viewBox="0 0 9 9" refX="8.5" refY="4.5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 1 L8 4.5 L0 8" fill="none" stroke="context-stroke" stroke-width="1.25"/></marker></defs>
+    <g class="graph-edge" data-from="home" data-to="library"><path class="graph-wire " d="M260 137 L342 137" marker-end="url(#arrow-fl-screens)"/></g><g class="graph-edge" data-from="library" data-to="upload"><path class="graph-wire " d="M574 137 L656 137" marker-end="url(#arrow-fl-screens)"/></g><g class="graph-edge" data-from="upload" data-to="pending"><path class="graph-wire " d="M888 137 L970 137" marker-end="url(#arrow-fl-screens)"/></g><g class="graph-edge" data-from="pending" data-to="overview"><path class="graph-wire " d="M1086 218 L1086 237 Q1086 246 1077 246 L153 246 Q144 246 144 255 L144 300" marker-end="url(#arrow-fl-screens)"/><text class="wire-label" x="800" y="240">Analyse, locally or in the cloud</text></g><g class="graph-edge" data-from="library" data-to="overview"><path class="graph-wire " d="M458 218 L458 261 Q458 270 449 270 L153 270 Q144 270 144 279 L144 300" marker-end="url(#arrow-fl-screens)"/><text class="wire-label" x="300" y="288">Open an analysed session</text></g><g class="graph-edge" data-from="overview" data-to="flow"><path class="graph-wire " d="M260 381 L342 381" marker-end="url(#arrow-fl-screens)"/></g><g class="graph-edge" data-from="flow" data-to="replay"><path class="graph-wire " d="M574 381 L656 381" marker-end="url(#arrow-fl-screens)"/></g><g class="graph-edge" data-from="replay" data-to="heatmap"><path class="graph-wire " d="M888 381 L970 381" marker-end="url(#arrow-fl-screens)"/></g><g class="graph-edge" data-from="overview" data-to="errors"><path class="graph-wire " d="M144 462 L144 544" marker-end="url(#arrow-fl-screens)"/><text class="wire-label" x="226" y="528">Report sections</text></g><g class="graph-edge" data-from="errors" data-to="successes"><path class="graph-wire " d="M260 625 L342 625" marker-end="url(#arrow-fl-screens)"/></g><g class="graph-edge" data-from="successes" data-to="ux"><path class="graph-wire " d="M574 625 L656 625" marker-end="url(#arrow-fl-screens)"/></g><g class="graph-edge" data-from="ux" data-to="feedback"><path class="graph-wire " d="M888 625 L970 625" marker-end="url(#arrow-fl-screens)"/></g><g class="graph-edge" data-from="errors" data-to="technical"><path class="graph-wire " d="M144 706 L144 788" marker-end="url(#arrow-fl-screens)"/></g><g class="graph-edge" data-from="technical" data-to="test-script"><path class="graph-wire " d="M260 869 L342 869" marker-end="url(#arrow-fl-screens)"/></g><g class="graph-edge" data-from="test-script" data-to="settings"><path class="graph-wire " d="M574 869 L656 869" marker-end="url(#arrow-fl-screens)"/></g>
+  </svg><figure class="lab-snode" id="screen-home" data-node="home" data-peek="assets/flowy-lab-home.webp" data-peek-label="Select to open full size" style="--node-x:28px;--node-y:56px;--origin:left top">
+      <a class="zoom lab-snode-shot" data-zoom href="assets/flowy-lab-home.webp"><img src="assets/flowy-lab-home.webp" alt="Home in the Flowy dashboard, demo session." loading="lazy" decoding="async"></a>
+      <figcaption><a class="fl-snode-name" href="#map-home" title="Show in the information architecture">Home <span aria-hidden="true">↑</span></a></figcaption>
+    </figure><figure class="lab-snode" id="screen-library" data-node="library" data-peek="assets/flowy-lab-library.webp" data-peek-label="Select to open full size" style="--node-x:342px;--node-y:56px;--origin:center top">
+      <a class="zoom lab-snode-shot" data-zoom href="assets/flowy-lab-library.webp"><img src="assets/flowy-lab-library.webp" alt="Sessions library in the Flowy dashboard, demo session." loading="lazy" decoding="async"></a>
+      <figcaption><a class="fl-snode-name" href="#map-library" title="Show in the information architecture">Sessions library <span aria-hidden="true">↑</span></a></figcaption>
+    </figure><figure class="lab-snode" id="screen-upload" data-node="upload" data-peek="assets/flowy-lab-upload.webp" data-peek-label="Select to open full size" style="--node-x:656px;--node-y:56px;--origin:center top">
+      <a class="zoom lab-snode-shot" data-zoom href="assets/flowy-lab-upload.webp"><img src="assets/flowy-lab-upload.webp" alt="Upload a session in the Flowy dashboard, demo session." loading="lazy" decoding="async"></a>
+      <figcaption><a class="fl-snode-name" href="#map-upload" title="Show in the information architecture">Upload a session <span aria-hidden="true">↑</span></a></figcaption>
+    </figure><figure class="lab-snode" id="screen-pending" data-node="pending" data-peek="assets/flowy-lab-pending.webp" data-peek-label="Select to open full size" style="--node-x:970px;--node-y:56px;--origin:right top">
+      <a class="zoom lab-snode-shot" data-zoom href="assets/flowy-lab-pending.webp"><img src="assets/flowy-lab-pending.webp" alt="Generate the report in the Flowy dashboard, demo session." loading="lazy" decoding="async"></a>
+      <figcaption><a class="fl-snode-name" href="#map-pending" title="Show in the information architecture">Generate the report <span aria-hidden="true">↑</span></a></figcaption>
+    </figure><figure class="lab-snode" id="screen-overview" data-node="overview" data-peek="assets/flowy-lab-overview.webp" data-peek-label="Select to open full size" style="--node-x:28px;--node-y:300px;--origin:left top">
+      <a class="zoom lab-snode-shot" data-zoom href="assets/flowy-lab-overview.webp"><img src="assets/flowy-lab-overview.webp" alt="Overview in the Flowy dashboard, demo session." loading="lazy" decoding="async"></a>
+      <figcaption><a class="fl-snode-name" href="#map-overview" title="Show in the information architecture">Overview <span aria-hidden="true">↑</span></a></figcaption>
+    </figure><figure class="lab-snode" id="screen-flow" data-node="flow" data-peek="assets/flowy-lab-flow.webp" data-peek-label="Select to open full size" style="--node-x:342px;--node-y:300px;--origin:center top">
+      <a class="zoom lab-snode-shot" data-zoom href="assets/flowy-lab-flow.webp"><img src="assets/flowy-lab-flow.webp" alt="Flow in the Flowy dashboard, demo session." loading="lazy" decoding="async"></a>
+      <figcaption><a class="fl-snode-name" href="#map-flow" title="Show in the information architecture">Flow <span aria-hidden="true">↑</span></a></figcaption>
+    </figure><figure class="lab-snode" id="screen-replay" data-node="replay" data-peek="assets/flowy-lab-replay.webp" data-peek-label="Select to open full size" style="--node-x:656px;--node-y:300px;--origin:center top">
+      <a class="zoom lab-snode-shot" data-zoom href="assets/flowy-lab-replay.webp"><img src="assets/flowy-lab-replay.webp" alt="Replay in the Flowy dashboard, demo session." loading="lazy" decoding="async"></a>
+      <figcaption><a class="fl-snode-name" href="#map-replay" title="Show in the information architecture">Replay <span aria-hidden="true">↑</span></a></figcaption>
+    </figure><figure class="lab-snode" id="screen-heatmap" data-node="heatmap" data-peek="assets/flowy-lab-heatmap.webp" data-peek-label="Select to open full size" style="--node-x:970px;--node-y:300px;--origin:right top">
+      <a class="zoom lab-snode-shot" data-zoom href="assets/flowy-lab-heatmap.webp"><img src="assets/flowy-lab-heatmap.webp" alt="Heatmap in the Flowy dashboard, demo session." loading="lazy" decoding="async"></a>
+      <figcaption><a class="fl-snode-name" href="#map-heatmap" title="Show in the information architecture">Heatmap <span aria-hidden="true">↑</span></a></figcaption>
+    </figure><figure class="lab-snode" id="screen-errors" data-node="errors" data-peek="assets/flowy-lab-errors.webp" data-peek-label="Select to open full size" style="--node-x:28px;--node-y:544px;--origin:left top">
+      <a class="zoom lab-snode-shot" data-zoom href="assets/flowy-lab-errors.webp"><img src="assets/flowy-lab-errors.webp" alt="Errors in the Flowy dashboard, demo session." loading="lazy" decoding="async"></a>
+      <figcaption><a class="fl-snode-name" href="#map-errors" title="Show in the information architecture">Errors <span aria-hidden="true">↑</span></a></figcaption>
+    </figure><figure class="lab-snode" id="screen-successes" data-node="successes" data-peek="assets/flowy-lab-successes.webp" data-peek-label="Select to open full size" style="--node-x:342px;--node-y:544px;--origin:center top">
+      <a class="zoom lab-snode-shot" data-zoom href="assets/flowy-lab-successes.webp"><img src="assets/flowy-lab-successes.webp" alt="Successes in the Flowy dashboard, demo session." loading="lazy" decoding="async"></a>
+      <figcaption><a class="fl-snode-name" href="#map-successes" title="Show in the information architecture">Successes <span aria-hidden="true">↑</span></a></figcaption>
+    </figure><figure class="lab-snode" id="screen-ux" data-node="ux" data-peek="assets/flowy-lab-ux.webp" data-peek-label="Select to open full size" style="--node-x:656px;--node-y:544px;--origin:center top">
+      <a class="zoom lab-snode-shot" data-zoom href="assets/flowy-lab-ux.webp"><img src="assets/flowy-lab-ux.webp" alt="UX insights in the Flowy dashboard, demo session." loading="lazy" decoding="async"></a>
+      <figcaption><a class="fl-snode-name" href="#map-ux" title="Show in the information architecture">UX insights <span aria-hidden="true">↑</span></a></figcaption>
+    </figure><figure class="lab-snode" id="screen-feedback" data-node="feedback" data-peek="assets/flowy-lab-feedback.webp" data-peek-label="Select to open full size" style="--node-x:970px;--node-y:544px;--origin:right top">
+      <a class="zoom lab-snode-shot" data-zoom href="assets/flowy-lab-feedback.webp"><img src="assets/flowy-lab-feedback.webp" alt="Tester feedback in the Flowy dashboard, demo session." loading="lazy" decoding="async"></a>
+      <figcaption><a class="fl-snode-name" href="#map-feedback" title="Show in the information architecture">Tester feedback <span aria-hidden="true">↑</span></a></figcaption>
+    </figure><figure class="lab-snode" id="screen-technical" data-node="technical" data-peek="assets/flowy-lab-technical.webp" data-peek-label="Select to open full size" style="--node-x:28px;--node-y:788px;--origin:left bottom">
+      <a class="zoom lab-snode-shot" data-zoom href="assets/flowy-lab-technical.webp"><img src="assets/flowy-lab-technical.webp" alt="Technical notes in the Flowy dashboard, demo session." loading="lazy" decoding="async"></a>
+      <figcaption><a class="fl-snode-name" href="#map-technical" title="Show in the information architecture">Technical notes <span aria-hidden="true">↑</span></a></figcaption>
+    </figure><figure class="lab-snode" id="screen-test-script" data-node="test-script" data-peek="assets/flowy-lab-test-script.webp" data-peek-label="Select to open full size" style="--node-x:342px;--node-y:788px;--origin:center bottom">
+      <a class="zoom lab-snode-shot" data-zoom href="assets/flowy-lab-test-script.webp"><img src="assets/flowy-lab-test-script.webp" alt="Test script in the Flowy dashboard, demo session." loading="lazy" decoding="async"></a>
+      <figcaption><a class="fl-snode-name" href="#map-test-script" title="Show in the information architecture">Test script <span aria-hidden="true">↑</span></a></figcaption>
+    </figure><figure class="lab-snode" id="screen-settings" data-node="settings" data-peek="assets/flowy-lab-settings.webp" data-peek-label="Select to open full size" style="--node-x:656px;--node-y:788px;--origin:center bottom">
+      <a class="zoom lab-snode-shot" data-zoom href="assets/flowy-lab-settings.webp"><img src="assets/flowy-lab-settings.webp" alt="Session settings in the Flowy dashboard, demo session." loading="lazy" decoding="async"></a>
+      <figcaption><a class="fl-snode-name" href="#map-settings" title="Show in the information architecture">Session settings <span aria-hidden="true">↑</span></a></figcaption>
+    </figure></div></div>
+  </div><p class="lab-canvas-hint" aria-hidden="true">Drag sideways to explore →</p>
+  </section></div>
+    </div></section>
+  </main>
+  <footer class="lab-footer"><div class="wrap lab-shell">
+    <a class="lab-next" href="sel.html"><span>Next case</span><strong>SEL <i aria-hidden="true">→</i></strong></a>
+    <div class="lab-footer-meta">
+      <p>Flavio Montagner · Senior Product &amp; CX Designer</p>
+      <a class="lab-link" href="mailto:flavio.montagner@gmail.com">flavio.montagner@gmail.com</a>
+      <a class="lab-link" href="https://www.linkedin.com/in/flavio-montagner/" rel="noopener">LinkedIn ↗</a>
+      <a class="lab-link" href="assets/flavio-montagner-cv.pdf" download>Download CV</a>
+    </div>
+  </div></footer>
+  <dialog id="image-view" aria-label="Enlarged project image"><div class="viewer-controls"><button type="button" data-size>View actual size</button><button type="button" data-close>Close ×</button></div><div class="image-scroll"><img alt=""></div><p class="image-label"></p></dialog>
+</body></html>

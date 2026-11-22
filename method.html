@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en" data-type="software" data-motion>
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>DesAI Thinking · Flavio Montagner</title>
+  <meta name="description" content="DesAI Thinking: a design method that lets AI do the volume while design decisions stay with people. Phases, the designer-in-the-loop model, tools, delivery in bolts and the guardrails that keep it honest."><meta name="theme-color" content="#f4f1ea">
+  <meta name="page-type" content="software"><meta name="site-kind" content="software"><meta name="robots" content="noindex">
+  <meta property="og:title" content="DesAI Thinking · Flavio Montagner"><meta property="og:description" content="DesAI Thinking: a design method that lets AI do the volume while design decisions stay with people. Phases, the designer-in-the-loop model, tools, delivery in bolts and the guardrails that keep it honest."><meta property="og:image" content="assets/flow-journey.webp">
+  <link rel="icon" href="assets/mark.png"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="assets/motion/motion.css"><link rel="stylesheet" href="beta-lab.css"><link rel="stylesheet" href="desai-lab.css">
+  <script>document.documentElement.classList.add('m-enter');setTimeout(()=>document.documentElement.classList.add('m-enter-done'),700)</script>
+  <script src="beta-lab.js" defer></script><script src="desai-lab.js" defer></script><script src="interactions.js" defer></script>
+</head>
+<body class="beta-lab desai-lab">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="nav lab-mast">
+    <div class="lab-nav-bar">
+      <a class="lab-mark" href="index.html" aria-label="Flavio Montagner, home"><img src="assets/fm-head.webp" alt="" width="40" height="40"></a>
+      <nav class="lab-nav" aria-label="Site"><div class="lab-drop"><a class="lab-nav-link is-site" href="index.html#work" aria-haspopup="true">Work<i aria-hidden="true"></i></a><div class="lab-drop-panel" role="group" aria-label="Projects"><a href="beta.html">Beta Platform</a><a href="flowy.html">Flowy</a><a href="sel.html">SEL</a><a href="necrothing.html">Necrothing</a></div></div><a class="lab-nav-link is-site" aria-current="page" href="method.html">Method</a><a class="lab-nav-link is-site" href="index.html#about">About</a><a class="lab-nav-link is-site" href="index.html#contact">Contact</a></nav>
+      <button class="lab-menu-toggle" type="button" data-menu-open aria-haspopup="dialog" aria-controls="lab-menu" aria-expanded="false" hidden>Menu</button>
+    </div>
+  </header>
+  <nav class="lab-rail" aria-label="Page sections"><a class="lab-nav-link" href="#shift"><span aria-hidden="true">01</span>Shift</a><a class="lab-nav-link" href="#reins"><span aria-hidden="true">02</span>Reins</a><a class="lab-nav-link" href="#loop"><span aria-hidden="true">03</span>Loop</a><a class="lab-nav-link" href="#phases"><span aria-hidden="true">04</span>Phases</a><a class="lab-nav-link" href="#tools"><span aria-hidden="true">05</span>Tools</a><a class="lab-nav-link" href="#delivery"><span aria-hidden="true">06</span>Delivery</a><a class="lab-nav-link" href="#guardrails"><span aria-hidden="true">07</span>Guardrails</a><a class="lab-nav-link" href="#practice"><span aria-hidden="true">08</span>Practice</a></nav>
+  <div class="lab-progress" aria-hidden="true"></div>
+  <dialog id="lab-menu" aria-label="Menu">
+    <div class="lab-menu-inner">
+      <button type="button" data-menu-close>Close ×</button>
+      <p class="lab-menu-tag">On this page</p><nav aria-label="Page sections"><a class="lab-nav-link" href="#shift"><span aria-hidden="true">01</span>Shift</a><a class="lab-nav-link" href="#reins"><span aria-hidden="true">02</span>Reins</a><a class="lab-nav-link" href="#loop"><span aria-hidden="true">03</span>Loop</a><a class="lab-nav-link" href="#phases"><span aria-hidden="true">04</span>Phases</a><a class="lab-nav-link" href="#tools"><span aria-hidden="true">05</span>Tools</a><a class="lab-nav-link" href="#delivery"><span aria-hidden="true">06</span>Delivery</a><a class="lab-nav-link" href="#guardrails"><span aria-hidden="true">07</span>Guardrails</a><a class="lab-nav-link" href="#practice"><span aria-hidden="true">08</span>Practice</a></nav>
+      <p class="lab-menu-tag">Site</p><nav aria-label="Site"><a class="lab-nav-link is-site" href="index.html#work">Work</a><a class="lab-nav-link is-site" href="method.html">Method</a><a class="lab-nav-link is-site" href="index.html#about">About</a><a class="lab-nav-link is-site" href="index.html#contact">Contact</a></nav>
+      <p class="lab-menu-tag">Projects</p><nav aria-label="Projects"><a class="lab-nav-link is-site" href="beta.html">Beta Platform</a><a class="lab-nav-link is-site" href="flowy.html">Flowy</a><a class="lab-nav-link is-site" href="sel.html">SEL</a><a class="lab-nav-link is-site" href="necrothing.html">Necrothing</a></nav>
+    </div>
+  </dialog>
+  <a class="lab-top" href="#main" data-top aria-label="Back to top"><span aria-hidden="true">↑</span></a>
+  <main id="main">
+    <section id="overview" class="hero dz-hero" data-enter>
+    <div class="wrap lab-shell dz-hero-grid">
+      <div class="dz-hero-copy">
+        <h1>Ideas are cheap now. <em>Judgement isn’t.</em></h1>
+        <p class="dz-lede">AI can turn a description into a plausible interface in minutes. If the description leaves out who decides, with what evidence and what can go wrong, the prototype looks convincing and answers the wrong question. DesAI Thinking is how I keep design decisions in human hands while AI does the volume.</p>
+        <p class="dz-role"><strong>My role</strong> Author of the method. A validation designer who orchestrates the agents and uses AI as operational support.</p>
+      </div>
+      <figure class="dz-gen" data-gen>
+        <figcaption class="dz-gen-head"><span>AI proposes</span><span class="dz-gen-count" data-gen-count>0 proposed · 0 kept</span></figcaption>
+        <div class="dz-gen-grid" data-gen-grid aria-hidden="true"></div>
+        <p class="dz-gen-foot"><b>The designer disposes.</b> Select a variant to keep or reject it · illustrative</p>
+      </figure>
+    </div>
+  </section><section id="shift" class="dz-shift"><div class="wrap lab-shell">
+    <h2>The bottleneck moves from making to judging.</h2>
+    <p class="dz-shift-lede">When ideation and prototyping collapse into one step, the time that used to go into drawing screens goes into deciding which of them deserve to exist. The method is built around that constraint rather than around speed.</p>
+    <div class="dz-bars" data-bars><div class="dz-bar-row">
+      <p class="dz-bar-name">Design thinking, as practised<span>Making is the slow part.</span></p>
+      <div class="dz-bar"><span class="is-r" style="--w:20"><b>Research</b></span><span class="is-i" style="--w:16"><b>Ideate</b></span><span class="is-p" style="--w:34"><b>Prototype</b></span><span class="is-t" style="--w:16"><b>Test</b></span></div>
+    </div><div class="dz-bar-row">
+      <p class="dz-bar-name">DesAI Thinking<span>Judging becomes the slow part, on purpose.</span></p>
+      <div class="dz-bar"><span class="is-r" style="--w:20"><b>Research</b></span><span class="is-ip" style="--w:13"><b>Ideate + prototype</b></span><span class="is-j" style="--w:32"><b>Judge</b></span><span class="is-t" style="--w:12"><b>Test</b></span></div>
+    </div></div>
+    <p class="dz-note">Proportions are illustrative, not measured.</p>
+  </div></section><section id="reins" class="dz-reins"><div class="wrap lab-shell">
+    <div class="dz-reins-grid">
+      <div>
+        <h2>Whoever judges best holds the reins.</h2>
+        <p class="dz-reins-lede">If judging is the new bottleneck, the advantage goes to the person who already spends their days judging: watching real people use real products, telling a plausible screen from a working one, and deciding what evidence is enough. That is the validation designer’s job. With agents doing the volume, the role moves from checking at the end to steering from the start.</p>
+        <dl class="dz-roles"><div><dt>Creative director</dt><dd>Sets the direction and refuses the generic.</dd></div><div><dt>Context curator</dt><dd>Feeds the agents the users, the constraints and the product’s own language.</dd></div><div><dt>Ethical validator</dt><dd>Looks for who the output leaves out and what it gets wrong.</dd></div><div><dt>Orchestrator</dt><dd>Decides which agent works on what, in what order, and what comes back in.</dd></div></dl>
+      </div>
+      <div class="dz-conductor" data-conductor aria-label="Diagram: the validation designer at the centre directs four AI agents; their output comes back through the designer before it reaches the product.">
+        <svg viewBox="0 0 400 400" aria-hidden="true">
+          <line class="dz-rein" x1="200" y1="200" x2="200" y2="60"/><circle class="dz-pulse is-out" data-pulse="0" r="5" cx="200" cy="200"/><circle class="dz-pulse is-in" data-pulse-in="0" r="4" cx="200" cy="60"/><line class="dz-rein" x1="200" y1="200" x2="340" y2="200"/><circle class="dz-pulse is-out" data-pulse="1" r="5" cx="200" cy="200"/><circle class="dz-pulse is-in" data-pulse-in="1" r="4" cx="340" cy="200"/><line class="dz-rein" x1="200" y1="200" x2="200" y2="340"/><circle class="dz-pulse is-out" data-pulse="2" r="5" cx="200" cy="200"/><circle class="dz-pulse is-in" data-pulse-in="2" r="4" cx="200" cy="340"/><line class="dz-rein" x1="200" y1="200" x2="60" y2="200"/><circle class="dz-pulse is-out" data-pulse="3" r="5" cx="200" cy="200"/><circle class="dz-pulse is-in" data-pulse-in="3" r="4" cx="60" cy="200"/>
+        </svg>
+        <span class="dz-centre"><b>Validation designer</b>holds the reins</span>
+        <span class="dz-agent a0"><b>Research agent</b>Synthesises interviews, sessions and tickets.</span><span class="dz-agent a1"><b>Structure agent</b>Drafts problem statements, flows and architecture.</span><span class="dz-agent a2"><b>Build agent</b>Generates variants and working code.</span><span class="dz-agent a3"><b>Test agent</b>Runs checks and organises what testing found.</span>
+        <p class="dz-conductor-key"><span class="k-out">Direction and context</span><span class="k-in">Proposals, filtered on the way back</span></p>
+      </div>
+    </div>
+    <p class="dz-reins-proof">In practice: on Beta I shadowed the team, let AI build the MVP and spent my time on ten rounds of validation. On Flowy the model writes the first account of a session and a person decides whether it is true.</p>
+  </div></section><section id="loop" class="dz-loop"><div class="wrap lab-shell">
+    <div class="dz-split">
+      <h2>AI proposes. The designer disposes.</h2>
+      <p>I treat the model like a junior designer with unlimited speed and an encyclopaedic memory for interface patterns, and no judgement, strategy or sense of context. Four things stay with the designer, and each one filters what reaches the product.</p>
+    </div>
+    <div class="dz-pipe" data-pipe aria-hidden="true"><canvas data-pipe-canvas></canvas>
+      <span class="dz-gate" style="--g:0"><i></i><b>Context</b></span><span class="dz-gate" style="--g:1"><i></i><b>Direction</b></span><span class="dz-gate" style="--g:2"><i></i><b>Validation</b></span><span class="dz-gate" style="--g:3"><i></i><b>Annotation</b></span>
+    </div>
+    <ol class="dz-gates"><li><span>01</span><h3>Context</h3><p>Give the model the task, the constraints, examples and the product’s own language: a sketch, a wireframe, existing screens. Without them, output drifts to the statistically common, the same generic interface as everyone else.</p></li><li><span>02</span><h3>Direction</h3><p>Prompt with structure: the role, the task, who the user is and the format wanted. Disambiguate. A complex internal tool is not a consumer app, and the model will not guess which one you mean.</p></li><li><span>03</span><h3>Validation</h3><p>Clean up what comes back: hierarchy, contrast, accessibility, spacing. Then judge the usability trade-offs against the problem the research found, not against how finished the screen looks.</p></li><li><span>04</span><h3>Annotation</h3><p>Keep the accepted and the rejected examples with the reason for each, and the evidence behind them. Later outputs can be checked against that record.</p></li></ol>
+  </div></section><section id="phases" class="dz-phases"><div class="wrap lab-shell">
+    <h2>Five phases, two lanes.</h2>
+    <p class="dz-phases-lede">The phases are design thinking’s, plus a phase zero. What changes is that every phase has two lanes running side by side: what AI contributes, and what the designer decides. The last phase writes the next brief.</p>
+    <div class="dz-score-scroll"><div class="dz-score" data-score>
+      <p class="dz-lane-label is-q">Question</p>
+      <div class="dz-col-head" data-col="0"><span>0</span><h3>Pre-test the premise</h3><p>What would have to be true for this to be worth building?</p></div><div class="dz-col-head" data-col="1"><span>1</span><h3>Empathise</h3><p>What did people actually do, and what did they say?</p></div><div class="dz-col-head" data-col="2"><span>2</span><h3>Define</h3><p>Which decision is hard, and for whom?</p></div><div class="dz-col-head" data-col="3"><span>3</span><h3>Ideate and prototype</h3><p>What changes if the decision happens earlier, or the evidence is closer?</p></div><div class="dz-col-head" data-col="4"><span>4</span><h3>Test and revise</h3><p>Can a person complete the task and explain what happened?</p></div>
+      <p class="dz-lane-label is-ai">AI contributes</p>
+      <div class="dz-cell is-ai" data-col="0">Make a small, inspectable concept that exposes the assumption.</div><div class="dz-cell is-ai" data-col="1">Organise observations, group recurring themes and surface the outliers.</div><div class="dz-cell is-ai" data-col="2">Draft alternative problem statements and maps of actors, tasks and constraints.</div><div class="dz-cell is-ai" data-col="3">Diverge: many low-fidelity structures in minutes. Converge: a working prototype in real code.</div><div class="dz-cell is-ai" data-col="4">Help organise observations and suggest cases for the next pass.</div>
+      <p class="dz-lane-label is-hu">Designer decides</p>
+      <div class="dz-cell is-hu" data-col="0">Choose the assumption that costs most if it is wrong, and decide what observation would challenge it.</div><div class="dz-cell is-hu" data-col="1">Check every theme against its source. Keep ambiguity, contradictions and missing voices in view.</div><div class="dz-cell is-hu" data-col="2">Set the scope, the user’s objective and the evidence needed to decide.</div><div class="dz-cell is-hu" data-col="3">Try the same task in every variant. Keep the differences and their consequences legible.</div><div class="dz-cell is-hu" data-col="4">Review behaviour, assess errors and record why the brief or the prototype changes.</div>
+      <div class="dz-return" aria-hidden="true"><span>The next brief</span></div>
+    </div></div>
+  </div></section><section id="tools" class="dz-tools"><div class="wrap lab-shell">
+    <div class="dz-split">
+      <h2>One agent, from insight to running code.</h2>
+      <p>I work with coding agents in the terminal and the IDE, Claude Code among them. With the right context they cover every stop on this line, from a cluster of quotes to an application someone can log in to. Choosing how far to go is still a design decision: the further along, the more convincing the artefact and the more expensive it is to throw away.</p>
+    </div>
+    <div class="dz-axis" data-axis>
+      <div class="dz-axis-line" aria-hidden="true"><span>Insight</span><span>Running code</span></div>
+      <ol><li style="--i:0"><i aria-hidden="true"></i><h3>Research synthesis</h3><p>Interviews, sessions and tickets grouped into themes, each traced back to its source.</p></li><li style="--i:1"><i aria-hidden="true"></i><h3>Structure</h3><p>Problem statements, flows and a first information architecture to argue about.</p></li><li style="--i:2"><i aria-hidden="true"></i><h3>Visual design</h3><p>Layouts and components inside the project’s own design system.</p></li><li style="--i:3"><i aria-hidden="true"></i><h3>Front-end code</h3><p>Real components, wired to the data they will use.</p></li><li style="--i:4"><i aria-hidden="true"></i><h3>Full-stack app</h3><p>A running application with routing, data and the integrations it needs.</p></li></ol>
+    </div>
+  </div></section><section id="delivery" class="dz-delivery"><div class="wrap lab-shell">
+    <h2>Sprints are too slow for this. Bolts aren’t.</h2>
+    <p class="dz-delivery-lede">If a prototype takes minutes but approving it takes three weeks, the agility is lost in the process. The guidelines borrow the agentic development lifecycle: short, intense cycles called bolts, measured in hours or a few days.</p>
+    <div class="dz-cal" data-cal aria-label="Illustration: one two-week sprint compared with a series of bolts over the same days.">
+      <p class="dz-cal-row"><b>Sprint</b><span class="dz-cal-track"><i class="is-sprint"></i></span></p>
+      <p class="dz-cal-row"><b>Bolts</b><span class="dz-cal-track"><i class="is-bolt" style="--i:0"></i><i class="is-bolt" style="--i:1"></i><i class="is-bolt" style="--i:2"></i><i class="is-bolt" style="--i:3"></i><i class="is-bolt" style="--i:4"></i><i class="is-bolt" style="--i:5"></i><i class="is-bolt" style="--i:6"></i><i class="is-bolt" style="--i:7"></i></span></p>
+      <p class="dz-cal-days" aria-hidden="true"><span>D1</span><span>D2</span><span>D3</span><span>D4</span><span>D5</span><span>D6</span><span>D7</span><span>D8</span><span>D9</span><span>D10</span></p>
+    </div>
+    <ol class="dz-moments"><li><span>01</span><p class="dz-moment-phase">Inception</p><h3>Mob elaboration</h3><p>The team states an intent. The AI asks clarifying questions and drafts user stories, non-functional requirements and acceptance criteria. The designer and the team redirect it, cut what doesn’t serve the user, and decide together.</p></li><li><span>02</span><p class="dz-moment-phase">Construction</p><h3>Mob construction and testing</h3><p>The AI drafts the logic, the code and the tests while the build takes shape. People review the architecture, the risky paths and what the tests actually prove.</p></li><li><span>03</span><p class="dz-moment-phase">Operations</p><h3>Operations</h3><p>Telemetry and behaviour in use are read continuously. Suggested fixes go back into the next bolt only after a person approves them.</p></li></ol>
+    <div class="dz-sync" data-sync>
+      <div class="dz-sync-copy">
+        <h3>The board updates itself.</h3>
+        <p>A ticket can start an AI coding agent, and the repository moves the ticket: a branch puts it in progress, a pull request in review, the CI result decides between QA, done and blocked. The board shows what engineering is really doing.</p>
+        <p class="dz-sync-event" data-sync-event aria-live="polite">git checkout -b feature/…</p>
+      </div>
+      <div class="dz-board" aria-hidden="true"><div class="dz-board-col"><p>Backlog</p></div><div class="dz-board-col"><p>In progress</p></div><div class="dz-board-col"><p>Code review</p></div><div class="dz-board-col"><p>Ready for QA</p></div><div class="dz-board-col"><p>Done</p></div><span class="dz-ticket" data-ticket><b>BETA-142</b>Group related reports</span></div>
+    </div>
+  </div></section><section id="guardrails" class="dz-guard"><div class="wrap lab-shell">
+    <h2>Speed needs a memory.</h2>
+    <p class="dz-guard-lede">Agents optimise locally. Given one prompt at a time, they slowly pull a product apart: architectural drift. The method answers with a persistent brief that every cycle has to read, and a record that every cycle has to write.</p>
+    <div class="dz-vision" data-vision>
+      <div class="dz-vision-doc">
+        <ul><li>What the product is, as a whole</li><li>The design principles it stands on</li><li>Constraints that must not be broken</li><li>Decisions already accepted, and why</li></ul>
+      </div>
+      <ol class="dz-bolts"><li style="--i:0"><b>Bolt 1</b><span>reads the brief</span><span>checks the change against it</span><span>records the trade-offs</span></li><li style="--i:1"><b>Bolt 2</b><span>reads the brief</span><span>checks the change against it</span><span>records the trade-offs</span></li><li style="--i:2"><b>Bolt 3</b><span>reads the brief</span><span>checks the change against it</span><span>records the trade-offs</span></li><li style="--i:3"><b>Bolt 4</b><span>reads the brief</span><span>checks the change against it</span><span>records the trade-offs</span></li></ol>
+    </div>
+    <div class="dz-checks">
+      <section><h3>Bias audits</h3><p>Stress-test prototypes with edge cases and under-represented users before anything ships. Models repeat the asymmetries in their training data unless someone looks for them.</p></section>
+      <section><h3>Explainability</h3><p>Be able to say why a design choice or a critical piece of generated code exists. Small, traceable bolts make that possible.</p></section>
+      <section><h3>The design system as a guardrail</h3><p>Tokens and components become rules the machine has to follow, so generated interfaces stay on brand without a person redrawing them.</p></section>
+    </div>
+    <dl class="dz-record">
+      <div><dt>Brief for a new iteration</dt><dd>User, task, starting evidence, expected behaviour, design-system constraints, open questions.</dd></div>
+      <div><dt>Record after review</dt><dd>Variant considered, evidence inspected, who decided, and what would justify reopening the choice.</dd></div>
+    </dl>
+  </div></section><section id="practice" class="dz-practice"><div class="wrap lab-shell">
+    <h2>Where I’ve used it.</h2>
+    <div class="dz-cases"><a class="dz-case" href="beta.html">
+      <span class="dz-case-shot"><img src="assets/bp-overview.webp" alt="" loading="lazy" decoding="async"></span>
+      <h3>Beta Platform <i aria-hidden="true">→</i></h3><p>From shadowing the team to a working MVP in about ten part-time days, then two weeks of testing with the people who use it: ten rounds, more than twenty changes. AI shortened the time between deciding a change and putting it back in front of them.</p>
+    </a><a class="dz-case" href="flowy.html">
+      <span class="dz-case-shot"><img src="assets/flowy-lab-overview.webp" alt="" loading="lazy" decoding="async"></span>
+      <h3>Flowy <i aria-hidden="true">→</i></h3><p>A research question decided what the SDK had to capture. The model writes the first account of a session; the reviewer checks it against the replay before anything is acted on.</p>
+    </a><a class="dz-case" href="sel.html">
+      <span class="dz-case-shot"><img src="assets/sel-lab-live.webp" alt="" loading="lazy" decoding="async"></span>
+      <h3>SEL <i aria-hidden="true">→</i></h3><p>A research setup that needed scripts and a computer became the brief for an educator platform, built with AI-assisted development and kept observational, never diagnostic.</p>
+    </a></div>
+    <p class="dz-honest">This is a method in development. Each project uses different parts of it, and a comparative study of its impact is still future work.</p>
+  </div></section>
+  </main>
+  <footer class="lab-footer"><div class="wrap lab-shell">
+    <a class="lab-next" href="beta.html"><span>See it applied</span><strong>Beta Platform <i aria-hidden="true">→</i></strong></a>
+    <div class="lab-footer-meta">
+      <p>Flavio Montagner · Senior Product &amp; CX Designer</p>
+      <a class="lab-link" href="mailto:flavio.montagner@gmail.com">flavio.montagner@gmail.com</a>
+      <a class="lab-link" href="https://www.linkedin.com/in/flavio-montagner/" rel="noopener">LinkedIn ↗</a>
+      <a class="lab-link" href="assets/flavio-montagner-cv.pdf" download>Download CV</a>
+    </div>
+  </div></footer>
+  <dialog id="image-view" aria-label="Enlarged project image"><div class="viewer-controls"><button type="button" data-size>View actual size</button><button type="button" data-close>Close ×</button></div><div class="image-scroll"><img alt=""></div><p class="image-label"></p></dialog>
+</body></html>
