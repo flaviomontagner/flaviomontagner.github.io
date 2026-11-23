@@ -291,10 +291,25 @@ if (stage && T && MODELS && T.GLTFLoader) {
 const form = document.querySelector('[data-bury]');
 if (form) {
   const out = document.querySelector('[data-bury-out]');
+  const stacked = matchMedia('(max-width:1020px)');
+  let pending = false;
   form.addEventListener('submit', e => {
     e.preventDefault();
+    if (pending) return;
     const input = form.querySelector('input');
     const name = input.value.trim() || input.placeholder;
+    // On phones the yard sits above the form: bring it back into view, then bury after a beat so the grave is seen rising.
+    if (stacked.matches && stage && bury) {
+      pending = true;
+      input.blur();
+      const smooth = !matchMedia('(prefers-reduced-motion: reduce)').matches;
+      stage.scrollIntoView({ behavior: smooth ? 'smooth' : 'auto', block: 'start' });
+      setTimeout(() => { pending = false; settle(name, input); }, 1000);
+      return;
+    }
+    settle(name, input);
+  });
+  const settle = (name, input) => {
     const result = bury && bury(name);
     if (result === 'full') {
       out.textContent = 'The yard is full. Every plot has someone, or something, resting in it.';
@@ -306,7 +321,7 @@ if (form) {
       const em = document.createElement('em'); em.textContent = '+5 wisps'; out.append(em, '. Bring it flowers.');
       input.value = '';
     } else out.textContent = 'The yard is still loading. Try again in a moment.';
-  });
+  };
 }
 
 /* First session: the ten steps light up one after another, like the yard's spotlight. */
