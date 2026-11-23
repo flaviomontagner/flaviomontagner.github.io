@@ -233,11 +233,6 @@ function updateNav() {
 }
 const scheduleNavigation = () => { if (!scrollFrame) scrollFrame = requestAnimationFrame(updateNav); };
 addEventListener('scroll', scheduleNavigation, {passive:true});
-/* Over the dark footer the light fade behind the bottom bar is not needed. */
-const footer = document.querySelector('.lab-footer');
-if (footer && 'IntersectionObserver' in window) {
-  new IntersectionObserver(([entry]) => document.body.classList.toggle('is-at-footer', entry.isIntersecting), {rootMargin:'0px 0px -60px 0px'}).observe(footer);
-}
 const topButton = document.querySelector('[data-top]');
 if (topButton) {
   const toggleTop = () => topButton.classList.toggle('is-on', scrollY > 600);
