@@ -562,4 +562,4 @@ a.sg-node:hover,.sg-node:focus-visible {transform:translateY(-2px)}
   .beta-lab:has(.lab-rail) {--edge:max(clamp(20px,5vw,80px),94px)}
 }
 /* The swipe hint above a full-bleed strip starts where the strip's first card starts. */
-.lab-swipe:has(+ .sl-strip) {margin-left:max(var(--edge),calc((100vw - 1240px)/2))}
+.lab-swipe:has(+ .sl-strip) {margin-top:clamp(24px,3vw,40px);margin-left:max(var(--edge),calc((100vw - 1240px)/2))}
