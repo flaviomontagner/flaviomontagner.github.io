@@ -74,14 +74,14 @@ if (stage && T && MODELS && T.GLTFLoader) {
       place(cypress, -4.1, 1.4, 0, .9);
       place(bush, 3.7, .9, .4, .8);
       place(lamp, 2.3, -1.1, 0);
-      keeper = place(keep, 1.3, 1.5, .75, 1.15);
+      keeper = place(keep, 1.5, 1.9, .75, 1.15);
       ghost = place(gh, -1.7, .7, .9, 1.05);
       graveTemplate = grave;
       place(grave.clone(true), 1.9, -2.6, -.25, .7);
       place(pump, 4, 1.9, -.4, .9);
       place(kennel, -2.9, 3, .75, .9);
       dog = { obj: place(dg, -1.9, 2.2, .5, 1.2), rig: rigParts(dg, parts), phase: 0, a: 0 };
-      zombie = { obj: place(zb, 2.4, -.3, 0, 1.1), rig: rigParts(zb, parts), phase: 0, a: 0 };
+      zombie = { obj: place(zb, 2.15, .33, 0, 1.1), rig: rigParts(zb, parts), phase: 0, a: 0 };
       // a ring of wooden fence pieces around the lawn: pickets inward, rails outward
       const R = 5.35, N = 36, chord = 2 * Math.PI * R / N;
       for (let i = 0; i < N; i++) {
@@ -233,7 +233,8 @@ if (stage && T && MODELS && T.GLTFLoader) {
       const swing = Math.sin(z.phase * 2.2), step = Math.max(0, swing);
       const lurch = .28 + 1.05 * Math.max(0, Math.sin(z.phase * 2.2));
       z.a += dt * .16 * lurch;
-      const cx = .3, cz = -.2, rx = 3, rz = 1.15;
+      // a narrow lane between the house's garden fence and the keeper and ghost, clear of the lamp and the bush
+      const cx = .95, cz = .33, rx = 1.2, rz = .05;
       const x = cx + Math.cos(z.a) * rx, zz = cz + Math.sin(z.a) * rz;
       face(z.obj, -Math.sin(z.a) * rx, Math.cos(z.a) * rz);
       z.obj.position.set(x, 0, zz);
