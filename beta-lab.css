@@ -556,3 +556,10 @@ a.sg-node:hover,.sg-node:focus-visible {transform:translateY(-2px)}
   .lab-clock-inner {padding-bottom:84px}
   .beta-lab main > .lab-clock:first-child {padding-top:0}
 }
+
+/* Desktop windows narrower than ~1440px: keep every column clear of the fixed section rail (it ends at 70px). */
+@media(min-width:1021px) {
+  .beta-lab:has(.lab-rail) {--edge:max(clamp(20px,5vw,80px),94px)}
+}
+/* The swipe hint above a full-bleed strip starts where the strip's first card starts. */
+.lab-swipe:has(+ .sl-strip) {margin-left:max(var(--edge),calc((100vw - 1240px)/2))}
