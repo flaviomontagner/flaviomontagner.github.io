@@ -224,7 +224,7 @@
   .nc-hero-grid,.nc-world-grid,.nc-kiosk {grid-template-columns:minmax(0,1fr)}
   .necro-lab main > .nc-hero:first-child {min-height:auto;padding-top:0;row-gap:clamp(14px,2.5vw,24px)}
   .nc-hero::before,.nc-hero::after {display:none}
-  .nc-stage {position:relative;inset:auto;width:100%;height:clamp(260px,min(72vw,76svh),600px);overflow:hidden;isolation:isolate}
+  .nc-stage {position:relative;inset:auto;width:100%;height:clamp(300px,min(92vw,76svh),640px);overflow:hidden;isolation:isolate}
   .nc-stage::after {content:'';position:absolute;inset:auto 0 0;height:clamp(32px,9vw,72px);background:linear-gradient(transparent,var(--paper));pointer-events:none}
   .nc-fallback img {opacity:1}
   .nc-phase button {min-height:44px}

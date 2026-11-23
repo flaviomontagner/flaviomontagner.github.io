@@ -7,14 +7,25 @@ const menu = document.getElementById('lab-menu');
 const menuButton = document.querySelector('[data-menu-open]');
 if (typeof menu.showModal === 'function') {
   menuButton.hidden = false;
+  const menuClose = menu.querySelector('[data-menu-close]');
+  /* The bar inside the menu (home + close) takes the exact place and size of the closed bar. */
+  const placeClose = () => {
+    const bar = document.querySelector('.lab-mast').getBoundingClientRect();
+    const r = menuButton.getBoundingClientRect();
+    Object.assign(menuClose.parentElement.style, {left:bar.left + 'px', top:bar.top + 'px', width:bar.width + 'px', height:bar.height + 'px'});
+    Object.assign(menuClose.style, {width:r.width + 'px', height:r.height + 'px'});
+    menu.style.setProperty('--menu-close-space', (innerHeight - bar.top + 12) + 'px');
+  };
   menuButton.addEventListener('click', () => {
     for (const group of menu.querySelectorAll('details[open]')) group.open = false;
+    placeClose();
     menu.showModal();
     menu.scrollTop = 0;
     menuButton.setAttribute('aria-expanded','true');
   });
   menu.addEventListener('close', () => menuButton.setAttribute('aria-expanded','false'));
-  menu.querySelector('[data-menu-close]').addEventListener('click', () => menu.close());
+  menuClose.addEventListener('click', () => menu.close());
+  addEventListener('resize', () => { if (menu.open) placeClose(); });
   menu.addEventListener('click', event => {
     if (event.target.closest('a') || event.target === menu) menu.close();
   });

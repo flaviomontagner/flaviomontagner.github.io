@@ -31,7 +31,6 @@ for (const link of document.querySelectorAll('.mobile-rail a')) {
 const viewer = document.getElementById('image-view');
 if (viewer && typeof viewer.showModal === 'function') {
   const image = viewer.querySelector('img');
-  const size = viewer.querySelector('[data-size]');
   const close = viewer.querySelector('[data-close]');
   let opener;
   for (const link of document.querySelectorAll('[data-zoom]')) {
@@ -42,19 +41,11 @@ if (viewer && typeof viewer.showModal === 'function') {
       image.src = link.href;
       image.alt = link.querySelector('img')?.alt || link.dataset.label || '';
       viewer.querySelector('.image-label').textContent = image.alt;
-      viewer.classList.remove('actual-size');
-      size.textContent = 'View actual size';
-      size.setAttribute('aria-pressed', 'false');
       viewer.showModal();
       document.documentElement.classList.add('viewing-image');
       close.focus();
     });
   }
-  size.addEventListener('click', () => {
-    const actual = viewer.classList.toggle('actual-size');
-    size.textContent = actual ? 'Fit to screen' : 'View actual size';
-    size.setAttribute('aria-pressed', String(actual));
-  });
   close.addEventListener('click', () => viewer.close());
   viewer.addEventListener('click', e => { if (e.target === viewer) viewer.close(); });
   viewer.addEventListener('close', () => {

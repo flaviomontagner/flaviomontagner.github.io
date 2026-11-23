@@ -91,9 +91,17 @@ if (scrolly) {
     shots.forEach((shot, i) => shot.classList.toggle('is-on', i === index));
   };
   show(0);
-  const io = new IntersectionObserver(entries => {
-    for (const entry of entries) if (entry.isIntersecting) show(steps.indexOf(entry.target));
-  }, {rootMargin:'-45% 0px -45% 0px'});
-  steps.forEach(step => io.observe(step));
+  /* On phones a step lights up as soon as it is readable under the pinned shot, and stays lit until it slides beneath it. */
+  const phone = matchMedia('(max-width:740px)');
+  let io;
+  const watch = () => {
+    io?.disconnect();
+    io = new IntersectionObserver(entries => {
+      for (const entry of entries) if (entry.isIntersecting) show(steps.indexOf(entry.target));
+    }, {rootMargin: phone.matches ? '-70% 0px -29% 0px' : '-45% 0px -45% 0px'});
+    steps.forEach(step => io.observe(step));
+  };
+  watch();
+  phone.addEventListener('change', watch);
 }
 })();

@@ -215,13 +215,13 @@ if (stage && T && MODELS && T.GLTFLoader) {
     buttons.forEach(b => b.addEventListener('click', () => setPhase(b.dataset.phase)));
     setPhase('dusk');
 
-    // Keep the full yard in view on narrow screens and clear of the title on desktop.
+    // Frame the yard close: the ring may run past the edges, the world fills the hero. Clear of the title on desktop.
     const resize = () => {
       const { width, height } = stage.getBoundingClientRect();
       const wide = width > 1020;
       renderer.setSize(width, height, false);
-      camera.zoom = wide ? 1 : Math.min(1, width / (height * 1.6));
-      camera.setViewOffset(width, height, wide ? -width * .22 : 0, wide ? height * .06 : 0, width, height);
+      camera.zoom = wide ? 1.18 : Math.min(1, width / (height * 1.6)) * 1.8;
+      camera.setViewOffset(width, height, wide ? -width * .22 : 0, wide ? height * .06 : -height * .1, width, height);
     };
     resize(); addEventListener('resize', resize);
 
