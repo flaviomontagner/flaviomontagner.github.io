@@ -298,13 +298,21 @@ if (form) {
     if (pending) return;
     const input = form.querySelector('input');
     const name = input.value.trim() || input.placeholder;
-    // On phones the yard sits above the form: bring it back into view, then bury after a beat so the grave is seen rising.
+    // On phones the yard sits above the form: scroll back up to it, and the grave rises the moment we arrive.
     if (stacked.matches && stage && bury) {
       pending = true;
       input.blur();
       const smooth = !matchMedia('(prefers-reduced-motion: reduce)').matches;
       stage.scrollIntoView({ behavior: smooth ? 'smooth' : 'auto', block: 'start' });
-      setTimeout(() => { pending = false; settle(name, input); }, 1000);
+      const started = performance.now();
+      let still = 0;
+      const arrive = () => {
+        const top = stage.getBoundingClientRect().top;
+        still = Math.abs(top) < 2 ? still + 1 : 0;
+        if (still >= 2 || performance.now() - started > 2000) { pending = false; settle(name, input); }
+        else requestAnimationFrame(arrive);
+      };
+      requestAnimationFrame(arrive);
       return;
     }
     settle(name, input);
